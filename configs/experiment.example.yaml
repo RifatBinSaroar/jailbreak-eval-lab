@@ -1,0 +1,21 @@
+experiment_name: subdomain_validation_v0
+subdomain: TO_BE_SELECTED
+split:
+  development: 0.4
+  test: 0.6
+human_annotation:
+  independent_annotators: 2
+  adjudicate_disagreements: true
+baselines: []
+metrics:
+  - accuracy
+  - precision
+  - recall
+  - f1
+  - false_positive_rate
+  - false_negative_rate
+  - asr_distortion
+analysis:
+  ablation: true
+  error_taxonomy: true
+  attack_ranking_sensitivity: true
