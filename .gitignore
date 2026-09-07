@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.DS_Store
+
+# Local / restricted experiment material
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated outputs
+results/generated/*
+!results/generated/.gitkeep
+
+# Front-end build artefacts
+apps/web/node_modules/
+apps/web/dist/
+apps/web/.next/
