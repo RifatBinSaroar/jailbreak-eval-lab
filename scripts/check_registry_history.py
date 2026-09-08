@@ -9,7 +9,9 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from jailbreak_eval.registry import REGISTRIES, load_registries, validate_history, validate_registries
 
 
-def git(*args):return subprocess.check_output(['git',*args],text=True).strip()
+def git(*args):
+    # Registry JSON is UTF-8, including source titles and notes on Windows.
+    return subprocess.check_output(['git',*args],encoding='utf-8').strip()
 
 
 def records_at(sha):

@@ -34,7 +34,7 @@ def record(work):
     return record_canonical(i/'manifest.json',i/'dataset_manifest.json',i/'predictions.csv',i/'human_labels.csv',work/'results/runs',work/'registries',work)
 
 
-def load(path):return json.loads(path.read_text())
+def load(path):return json.loads(path.read_text(encoding='utf-8'))
 
 def write(path,value):path.write_bytes(json_bytes(value))
 
@@ -284,12 +284,14 @@ def test_git_history_rejects_an_intermediate_unversioned_edit_even_if_restored(w
     repo=work/'git-history';repo.mkdir();(repo/'registries').mkdir()
     initial={n:[] for n in REGISTRIES}
     paper=load(ROOT/'examples/registries/papers.json')['records'][0]
-    paper.update(id='paper:safe-history',record_kind='synthetic',version='1',notes='Safe history test.')
+    paper.update(id='paper:safe-history',record_kind='synthetic',version='1',notes='Safe history test: “Unicode” বাংলা.')
     initial['papers']=[paper]
     for n,e in envelopes(initial).items():write(repo/'registries'/f'{n}.json',e)
-    def git(*args):return subprocess.check_output(['git',*args],cwd=repo,text=True,stderr=subprocess.STDOUT).strip()
+    def git(*args):return subprocess.check_output(['git',*args],cwd=repo,encoding='utf-8',stderr=subprocess.STDOUT).strip()
     git('init');git('config','user.name','Safe Fixture');git('config','user.email','fixture@example.invalid')
     git('add','.');git('commit','-m','Initial synthetic history');baseline=git('rev-parse','HEAD')
+    clean=subprocess.run([sys.executable,str(ROOT/'scripts/check_registry_history.py'),'--base',baseline],cwd=repo,capture_output=True,encoding='utf-8')
+    assert clean.returncode==0,clean.stderr
     p=repo/'registries/papers.json';original=p.read_bytes();changed=load(p);changed['records'][0]['title']='Unversioned changed title';write(p,changed)
     git('add','.');git('commit','-m','Invalid unversioned edit')
     p.write_bytes(original);git('add','.');git('commit','-m','Restore final values')
