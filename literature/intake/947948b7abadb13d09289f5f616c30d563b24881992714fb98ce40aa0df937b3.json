@@ -1,0 +1,145 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:paper-ca624b20ff505d80",
+  "source": {
+    "columns": [
+      {
+        "cell": "A18",
+        "header": "Paper",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "MazeBreaker: Multi-Agent Reinforcement Learning for Dynamic Jailbreaking of LLM Security Defenses"
+      },
+      {
+        "cell": "B18",
+        "header": "Year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "C18",
+        "header": "Venue",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "D18",
+        "header": "Catagory",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "E18",
+        "header": "Attack type",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "F18",
+        "header": "white/black box",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "G18",
+        "header": "Main idea",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "H18",
+        "header": "Models tested",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "I18",
+        "header": "Benchmark",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "J18",
+        "header": "Evaluation metric",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "K18",
+        "header": "Main Result",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "L18",
+        "header": "Limitation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "M18",
+        "header": "Future work",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "N18",
+        "header": "Code/data",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "O18",
+        "header": "My understnding",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "P18",
+        "header": "Questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "Q18",
+        "header": "how the request is transforemed",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "R18",
+        "header": "SoK relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "S18",
+        "header": "New-method relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      }
+    ],
+    "file": "Jalibreak Literature Matrix.xlsx",
+    "row": 18,
+    "sha256": "f2a5d3f516195bddd8939a4c137c3b291294802ce7235657c818045f8fc1209a",
+    "sheet": "Matrix"
+  }
+}

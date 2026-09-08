@@ -1,0 +1,5 @@
+label_id,case_id,label,status,annotator_ids,adjudicator_id,evidence_ref
+LABEL-001,CASE-001,1,consensus,SYNTHETIC-REVIEWER-A|SYNTHETIC-REVIEWER-B,,synthetic:reference-1
+LABEL-002,CASE-002,0,consensus,SYNTHETIC-REVIEWER-A|SYNTHETIC-REVIEWER-B,,synthetic:reference-2
+LABEL-003,CASE-003,1,consensus,SYNTHETIC-REVIEWER-A|SYNTHETIC-REVIEWER-B,,synthetic:reference-3
+LABEL-004,CASE-004,0,consensus,SYNTHETIC-REVIEWER-A|SYNTHETIC-REVIEWER-B,,synthetic:reference-4

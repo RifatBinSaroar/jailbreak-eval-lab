@@ -1,0 +1,145 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:paper-656576777e35925b",
+  "source": {
+    "columns": [
+      {
+        "cell": "A38",
+        "header": "Paper",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "Activation-Guided Local Editing for Jailbreaking Attacks"
+      },
+      {
+        "cell": "B38",
+        "header": "Year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "C38",
+        "header": "Venue",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "D38",
+        "header": "Catagory",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "E38",
+        "header": "Attack type",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "F38",
+        "header": "white/black box",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "G38",
+        "header": "Main idea",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "H38",
+        "header": "Models tested",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "I38",
+        "header": "Benchmark",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "J38",
+        "header": "Evaluation metric",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "K38",
+        "header": "Main Result",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "L38",
+        "header": "Limitation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "M38",
+        "header": "Future work",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "N38",
+        "header": "Code/data",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "O38",
+        "header": "My understnding",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "P38",
+        "header": "Questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "Q38",
+        "header": "how the request is transforemed",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "R38",
+        "header": "SoK relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "S38",
+        "header": "New-method relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      }
+    ],
+    "file": "Jalibreak Literature Matrix.xlsx",
+    "row": 38,
+    "sha256": "f2a5d3f516195bddd8939a4c137c3b291294802ce7235657c818045f8fc1209a",
+    "sheet": "Matrix"
+  }
+}

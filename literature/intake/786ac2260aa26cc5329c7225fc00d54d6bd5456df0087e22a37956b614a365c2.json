@@ -1,0 +1,145 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:paper-9068215f6088889e",
+  "source": {
+    "columns": [
+      {
+        "cell": "A7",
+        "header": "Paper",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks"
+      },
+      {
+        "cell": "B7",
+        "header": "Year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "C7",
+        "header": "Venue",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "D7",
+        "header": "Catagory",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "E7",
+        "header": "Attack type",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "F7",
+        "header": "white/black box",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "G7",
+        "header": "Main idea",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "H7",
+        "header": "Models tested",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "I7",
+        "header": "Benchmark",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "J7",
+        "header": "Evaluation metric",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "K7",
+        "header": "Main Result",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "L7",
+        "header": "Limitation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "M7",
+        "header": "Future work",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "N7",
+        "header": "Code/data",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "O7",
+        "header": "My understnding",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "P7",
+        "header": "Questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "Q7",
+        "header": "how the request is transforemed",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "R7",
+        "header": "SoK relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "S7",
+        "header": "New-method relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      }
+    ],
+    "file": "Jalibreak Literature Matrix.xlsx",
+    "row": 7,
+    "sha256": "f2a5d3f516195bddd8939a4c137c3b291294802ce7235657c818045f8fc1209a",
+    "sheet": "Matrix"
+  }
+}

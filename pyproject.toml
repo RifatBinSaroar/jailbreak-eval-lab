@@ -7,10 +7,20 @@ name = "jailbreak-eval"
 version = "0.1.0"
 description = "Research framework for evaluating LLM jailbreak validators"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["jsonschema>=4.18,<5", "openpyxl>=3.1,<4"]
+
+[project.scripts]
+jailbreak-registry = "jailbreak_eval.registry:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+jailbreak_eval = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,180 @@
+{
+  "records": [
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "semantic"
+      ],
+      "executes_code": null,
+      "id": "validator:generic-judge",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Generic LLM judge",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:generic-judge",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "semantic"
+      ],
+      "executes_code": null,
+      "id": "validator:harmfulness",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "HarmBench-style harmfulness classifier",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:harmfulness",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:malicious-code",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "RMCBench-style evaluator",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:malicious-code",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:function-aware",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "CodeJailbreaker / MR-style evaluator",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:function-aware",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:case-specific",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "GUIDEDEVAL / GuidedBench-style judge",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:case-specific",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:runtime",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Compilation / runtime baseline",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:runtime",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "behavioural"
+      ],
+      "executes_code": null,
+      "id": "validator:effect",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Task-specific behavioural oracle",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:effect",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "registry": "validators",
+  "schema_version": "1.0.0"
+}

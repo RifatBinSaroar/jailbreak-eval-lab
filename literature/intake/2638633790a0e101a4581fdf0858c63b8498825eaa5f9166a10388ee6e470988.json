@@ -1,0 +1,145 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:paper-b418cf676053dbb4",
+  "source": {
+    "columns": [
+      {
+        "cell": "A24",
+        "header": "Paper",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
+      },
+      {
+        "cell": "B24",
+        "header": "Year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "C24",
+        "header": "Venue",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "D24",
+        "header": "Catagory",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "E24",
+        "header": "Attack type",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "F24",
+        "header": "white/black box",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "G24",
+        "header": "Main idea",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "H24",
+        "header": "Models tested",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "I24",
+        "header": "Benchmark",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "J24",
+        "header": "Evaluation metric",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "K24",
+        "header": "Main Result",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "L24",
+        "header": "Limitation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "M24",
+        "header": "Future work",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "N24",
+        "header": "Code/data",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "O24",
+        "header": "My understnding",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "P24",
+        "header": "Questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "Q24",
+        "header": "how the request is transforemed",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "R24",
+        "header": "SoK relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "S24",
+        "header": "New-method relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      }
+    ],
+    "file": "Jalibreak Literature Matrix.xlsx",
+    "row": 24,
+    "sha256": "f2a5d3f516195bddd8939a4c137c3b291294802ce7235657c818045f8fc1209a",
+    "sheet": "Matrix"
+  }
+}

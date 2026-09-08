@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "definition": "The current measurement question concerns generated code. No subdomain is locked.",
+      "exclusion_criteria": [],
+      "id": "domain:code",
+      "inclusion_criteria": [],
+      "level": "domain",
+      "name": "Malicious code",
+      "notes": "study scope. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": null,
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "definition": "Recommended first case study. Feasibility and prior-work checks remain open.",
+      "exclusion_criteria": [],
+      "id": "subdomain:information-theft",
+      "inclusion_criteria": [],
+      "level": "subdomain",
+      "name": "Synthetic information theft / exfiltration",
+      "notes": "primary candidate. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": "domain:code",
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "definition": "Recommended as a potential harness control; the synthesis flags greater prior-work saturation.",
+      "exclusion_criteria": [],
+      "id": "subdomain:filesystem",
+      "inclusion_criteria": [],
+      "level": "subdomain",
+      "name": "Filesystem impact / ransomware-like behaviour",
+      "notes": "control candidate. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": "domain:code",
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "registry": "domains",
+  "schema_version": "1.0.0"
+}

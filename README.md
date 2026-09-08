@@ -45,8 +45,29 @@ The repository will also host a living research web interface for literature, ex
 
 This repository is intentionally public. Public code, metadata, documentation, and research artefacts should be designed for reproducibility without casually publishing operational harmful payloads, secrets, or uncontrolled executable material. See `SAFETY.md` once the scaffold is complete.
 
-## Status
+## Research Platform v0.1
 
-**v0.1 research scaffold — under construction.**
+Start here: **[Very easy Python + VS Code + Live Server instructions](docs/PLATFORM_QUICKSTART.md)**.
+No npm is needed. This integration reconciles PRs #3–#6; it does not run the study.
 
-No novelty claim or experimental conclusion should be treated as established until supported by the literature review and held-out empirical evaluation.
+```text
+python -m pip install -e .
+python scripts/research.py validate
+python scripts/research.py build-web
+```
+
+Open `apps/web/index.html` with VS Code Live Server. The eight dashboard views use one canonical
+export from the nine registries. Papers retain stable IDs and versioned review history. Locally
+collected outputs can be recorded as immutable bundles with reproduced metrics and provenance.
+
+The initial state is **47 listed reading entries, 7 planned validators, 3 benchmark candidates,
+3 domain/subdomain entries, zero experiments and zero measured results**. There are no verified
+literature findings or inferred novelty claims in this release.
+
+- [Canonical data model and lifecycle](docs/REGISTRIES.md)
+- [Literature import and review](docs/LITERATURE_QUICKSTART.md)
+- [Offline experiment capture and analysis](docs/EXPERIMENT_FRAMEWORK.md)
+- [Integration reconciliation and test handoff](docs/INTEGRATION_V0_1.md)
+
+No novelty claim or experimental conclusion is established until supported by literature review
+and held-out empirical evaluation.

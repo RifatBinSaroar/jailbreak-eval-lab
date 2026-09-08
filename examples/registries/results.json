@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "results",
+  "records": [
+    {
+      "id": "result:template-prediction",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "kind": "prediction",
+      "run_id": "run:template-planned",
+      "validator": {
+        "id": "validator:template-review",
+        "version": "template-v1"
+      },
+      "human_label_ids": [],
+      "provenance": {
+        "code_commit": "9f673eadaa2b2364aa08f4cb4d2462e566ac7f80",
+        "config": {
+          "id": "config:template-analysis",
+          "version": "template-v1",
+          "parameters": {}
+        },
+        "artifacts": []
+      },
+      "case_id": "case:template-benign-text",
+      "input_artifact": null,
+      "status": "not_measured",
+      "assessment": {
+        "predicted_success": null,
+        "functional_stage": null,
+        "dimensions": {
+          "R": null,
+          "H": null,
+          "F": null,
+          "Q": null,
+          "E": null
+        },
+        "score": null,
+        "confidence": null,
+        "reason": "TEMPLATE ONLY. No assessment performed."
+      },
+      "source_result_ids": [],
+      "excluded_result_ids": [],
+      "metrics": []
+    },
+    {
+      "id": "result:template-aggregate",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "kind": "aggregate",
+      "run_id": "run:template-planned",
+      "validator": {
+        "id": "validator:template-review",
+        "version": "template-v1"
+      },
+      "human_label_ids": [],
+      "provenance": {
+        "code_commit": "9f673eadaa2b2364aa08f4cb4d2462e566ac7f80",
+        "config": {
+          "id": "config:template-analysis",
+          "version": "template-v1",
+          "parameters": {}
+        },
+        "artifacts": []
+      },
+      "case_id": null,
+      "input_artifact": null,
+      "status": "not_measured",
+      "assessment": null,
+      "source_result_ids": [],
+      "excluded_result_ids": [],
+      "metrics": [
+        {
+          "id": "metric:template-unselected",
+          "name": "TEMPLATE \u2014 select a metric",
+          "definition": "TEMPLATE \u2014 specify success endpoint, numerator, denominator, exclusions and FX policy.",
+          "unit": "TEMPLATE \u2014 unselected",
+          "status": "not_computed",
+          "value": null,
+          "denominator": null,
+          "reason": "No experiment has been run.",
+          "uncertainty": null
+        }
+      ]
+    }
+  ]
+}

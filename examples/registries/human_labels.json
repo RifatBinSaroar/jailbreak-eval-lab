@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "human_labels",
+  "records": [
+    {
+      "id": "label:template-pending",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "run_id": "run:template-planned",
+      "dataset": {
+        "id": "dataset:template-manifest",
+        "version": "template-v1"
+      },
+      "case_id": "case:template-benign-text",
+      "split": "development",
+      "input_artifact": null,
+      "annotator_id": "annotator:template-unassigned",
+      "rubric": {
+        "id": "rubric:template-review",
+        "version": "template-v1",
+        "artifact": null
+      },
+      "status": "pending",
+      "assessment": {
+        "predicted_success": null,
+        "functional_stage": null,
+        "dimensions": {
+          "R": null,
+          "H": null,
+          "F": null,
+          "Q": null,
+          "E": null
+        },
+        "score": null,
+        "confidence": null,
+        "reason": "TEMPLATE ONLY. No assessment performed."
+      },
+      "evidence": [],
+      "reviewed_label_ids": [],
+      "supersedes_id": null
+    }
+  ]
+}

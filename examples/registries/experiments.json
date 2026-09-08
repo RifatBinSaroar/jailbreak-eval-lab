@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "experiments",
+  "records": [
+    {
+      "id": "experiment:template-protocol",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "name": "TEMPLATE \u2014 protocol, not an experiment execution",
+      "status": "planned",
+      "config": {
+        "id": "config:template-experiment",
+        "version": "template-v1",
+        "parameters": {}
+      },
+      "dataset": {
+        "id": "dataset:template-manifest",
+        "version": "template-v1"
+      },
+      "validators": [
+        {
+          "id": "validator:template-review",
+          "version": "template-v1"
+        }
+      ],
+      "code_commit": "9f673eadaa2b2364aa08f4cb4d2462e566ac7f80",
+      "split": "development",
+      "seed": null,
+      "human_ground_truth": {
+        "id": "rubric:template-review",
+        "version": "template-v1",
+        "artifact": null
+      },
+      "protocol": null,
+      "models": [
+        {
+          "id": "model:template-unselected",
+          "provider": "TEMPLATE \u2014 unselected",
+          "name": "TEMPLATE \u2014 unselected",
+          "version": "template-v1"
+        }
+      ],
+      "attack_methods": [
+        {
+          "id": "attack:template-none",
+          "name": "TEMPLATE \u2014 metadata only; no attack",
+          "version": "template-v1",
+          "config": {
+            "id": "config:template-attack",
+            "version": "template-v1",
+            "parameters": {}
+          }
+        }
+      ]
+    }
+  ]
+}

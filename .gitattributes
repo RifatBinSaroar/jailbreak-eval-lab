@@ -1,0 +1,11 @@
+*.json text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.yml text eol=lf
+literature/intake/** -text
+data/manifests/captured/** -text
+# Keep fixture checksums stable on Windows and preserve imported run bytes.
+tests/fixtures/run_framework/*.json -text
+tests/fixtures/run_framework/*.csv -text
+results/runs/** -text

@@ -1,0 +1,145 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:paper-c8c688db850fa574",
+  "source": {
+    "columns": [
+      {
+        "cell": "A19",
+        "header": "Paper",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
+      },
+      {
+        "cell": "B19",
+        "header": "Year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "C19",
+        "header": "Venue",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "D19",
+        "header": "Catagory",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "E19",
+        "header": "Attack type",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "F19",
+        "header": "white/black box",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "G19",
+        "header": "Main idea",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "H19",
+        "header": "Models tested",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "I19",
+        "header": "Benchmark",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "J19",
+        "header": "Evaluation metric",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "K19",
+        "header": "Main Result",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "L19",
+        "header": "Limitation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "M19",
+        "header": "Future work",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "N19",
+        "header": "Code/data",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "O19",
+        "header": "My understnding",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "P19",
+        "header": "Questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "Q19",
+        "header": "how the request is transforemed",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "R19",
+        "header": "SoK relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "S19",
+        "header": "New-method relevance",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      }
+    ],
+    "file": "Jalibreak Literature Matrix.xlsx",
+    "row": 19,
+    "sha256": "f2a5d3f516195bddd8939a4c137c3b291294802ce7235657c818045f8fc1209a",
+    "sheet": "Matrix"
+  }
+}
