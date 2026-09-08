@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "domain_id": "WEB-DOM-CODE",
+      "parent_id": null,
+      "name": "Malicious code",
+      "status": "study scope",
+      "our_interpretation": "The current measurement question concerns generated code. No subdomain is locked.",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "domain_id": "WEB-DOM-INFORMATION-THEFT",
+      "parent_id": "WEB-DOM-CODE",
+      "name": "Synthetic information theft / exfiltration",
+      "status": "primary candidate",
+      "our_interpretation": "Recommended first case study. Feasibility and prior-work checks remain open.",
+      "open_questions": [
+        "Can the exact requested effect be measured deterministically under an agreed safe protocol?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "domain_id": "WEB-DOM-FILESYSTEM",
+      "parent_id": "WEB-DOM-CODE",
+      "name": "Filesystem impact / ransomware-like behaviour",
+      "status": "control candidate",
+      "our_interpretation": "Recommended as a potential harness control; the synthesis flags greater prior-work saturation.",
+      "open_questions": [
+        "What bounded control is needed to validate the future harness?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    }
+  ]
+}

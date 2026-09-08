@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "benchmark_id": "WEB-BENCH-JAWS",
+      "name": "JAWS-Bench",
+      "status": "candidate",
+      "paper_ids": [
+        "WEB-PAPER-JAWS"
+      ],
+      "version": null,
+      "licence": null,
+      "dataset_manifest": null,
+      "redistribution": null,
+      "split": null,
+      "our_interpretation": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "open_questions": [
+        "Verify coverage, access, licence and permitted reuse before selecting data."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "benchmark_id": "WEB-BENCH-REDCODE",
+      "name": "RedCode",
+      "status": "candidate",
+      "paper_ids": [
+        "WEB-PAPER-REDCODE"
+      ],
+      "version": null,
+      "licence": null,
+      "dataset_manifest": null,
+      "redistribution": null,
+      "split": null,
+      "our_interpretation": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "open_questions": [
+        "Verify coverage, access, licence and permitted reuse before selecting data."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "benchmark_id": "WEB-BENCH-MALWAREBENCH",
+      "name": "MalwareBench",
+      "status": "candidate",
+      "paper_ids": [
+        "WEB-PAPER-MALWAREBENCH"
+      ],
+      "version": null,
+      "licence": null,
+      "dataset_manifest": null,
+      "redistribution": null,
+      "split": null,
+      "our_interpretation": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "open_questions": [
+        "Verify coverage, access, licence and permitted reuse before selecting data."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    }
+  ]
+}
