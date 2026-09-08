@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "datasets",
+  "records": [
+    {
+      "id": "dataset:template-manifest",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "name": "TEMPLATE \u2014 planned dataset",
+      "status": "planned",
+      "benchmark": {
+        "id": "benchmark:template-manifest",
+        "version": "template-v1"
+      },
+      "domain_ids": [
+        "subdomain:template-text-presence"
+      ],
+      "provenance": {
+        "source": {
+          "id": "source:template-placeholder",
+          "url": "https://example.invalid/replace-with-source",
+          "locator": "TEMPLATE ONLY. Replace with an exact source location."
+        },
+        "upstream_version": null,
+        "license": null,
+        "retrieved_at": null,
+        "redistribution": "unknown",
+        "transformations": []
+      },
+      "manifest": null,
+      "cases": [
+        {
+          "id": "case:template-benign-text",
+          "group_id": "group:template-benign-text",
+          "split": "development"
+        }
+      ]
+    }
+  ]
+}

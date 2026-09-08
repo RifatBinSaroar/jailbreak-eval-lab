@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "domains",
+  "records": [
+    {
+      "id": "domain:template-benign-text",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "name": "TEMPLATE \u2014 benign text checks",
+      "level": "domain",
+      "parent_id": null,
+      "definition": "TEMPLATE taxonomy node, not a selected research domain.",
+      "inclusion_criteria": [],
+      "exclusion_criteria": [],
+      "status": "candidate",
+      "paper_ids": []
+    },
+    {
+      "id": "subdomain:template-text-presence",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "name": "TEMPLATE \u2014 text presence",
+      "level": "subdomain",
+      "parent_id": "domain:template-benign-text",
+      "definition": "TEMPLATE subdomain relationship only.",
+      "inclusion_criteria": [],
+      "exclusion_criteria": [],
+      "status": "candidate",
+      "paper_ids": []
+    }
+  ]
+}
