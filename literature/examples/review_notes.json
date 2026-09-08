@@ -1,0 +1,25 @@
+[
+  {
+    "paper_id": "SYNTHETIC-DEMO-ONLY",
+    "url": "https://example.org/synthetic-fixture",
+    "paper_demonstrates": ["Synthetic claim used only to demonstrate the data format."],
+    "our_interpretation": ["This fixture provides no evidence about actual research."],
+    "open_questions": ["Replace this demo with a real, source-backed review before using it for research."],
+    "evidence_status": "verified",
+    "review": {
+      "reviewed_by": "Synthetic demo reviewer",
+      "reviewed_at": "2026-09-08",
+      "notes": "Synthetic format demonstration only. No real paper was reviewed.",
+      "checks": [
+        {
+          "field": "paper_demonstrates",
+          "value": ["Synthetic claim used only to demonstrate the data format."],
+          "source_url": "https://example.org/synthetic-fixture",
+          "locator": "Synthetic placeholder section; not a real source",
+          "checked_by": "Synthetic demo checker",
+          "checked_at": "2026-09-08"
+        }
+      ]
+    }
+  }
+]

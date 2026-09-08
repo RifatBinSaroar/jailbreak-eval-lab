@@ -47,6 +47,19 @@ This repository is intentionally public. Public code, metadata, documentation, a
 
 ## Status
 
+### Literature ingestion
+
+The Python literature pipeline imports the existing Excel matrix, CSV/TSV or
+structured JSON notes into a validated canonical registry and website JSON.
+It preserves original attack-oriented columns, source provenance and missing
+fields, reports possible duplicates, and records explicit review stages.
+
+Start with [the very easy local run instructions](docs/LITERATURE_QUICKSTART.md).
+Python, Git and VS Code are enough; npm is not required.
+
+The initial registry contains 37 user-supplied titles only, all unreviewed and
+incomplete. Imported rows are not verified paper evidence.
+
 **v0.1 research scaffold — under construction.**
 
 No novelty claim or experimental conclusion should be treated as established until supported by the literature review and held-out empirical evaluation.
