@@ -1,0 +1,72 @@
+{
+  "ablation": null,
+  "attack_methods": [
+    {
+      "attack_method_id": "METHOD-A",
+      "config": {},
+      "name": "Harmless condition A",
+      "version": "test-1"
+    },
+    {
+      "attack_method_id": "METHOD-B",
+      "config": {},
+      "name": "Harmless condition B",
+      "version": "test-1"
+    }
+  ],
+  "code_commit": "0000000000000000000000000000000000000000",
+  "config": {
+    "test_only": true
+  },
+  "config_version": "synthetic-test-1",
+  "created_at": "2026-09-08T01:00:00Z",
+  "dataset": {
+    "dataset_id": "DATASET-SAFE-CARDS",
+    "sha256": "120f4de02586328ee97a4c2f018a12abae12fc2c32f6a7c510137f5e5076fca0",
+    "version": "test-1"
+  },
+  "experiment_id": "EXP-001",
+  "human_ground_truth": {
+    "rubric_version": "safe-cards-1",
+    "source": "Synthetic consensus test fixture; not actual human annotation",
+    "version": "synthetic-1"
+  },
+  "models": [
+    {
+      "config": {},
+      "model_id": "MODEL-SYNTHETIC",
+      "name": "Synthetic metadata only",
+      "version": "test-1"
+    }
+  ],
+  "protocol": {
+    "asr_denominator": "determinate_predictions",
+    "frozen_at": "2026-09-08T00:00:00Z",
+    "human_label_policy": "Synthetic consensus rows stand in for two independent annotators; no humans recruited.",
+    "protocol_id": "PROTOCOL-SAFE-CARDS",
+    "success_definition": "Synthetic binary colour-card reference used only to test arithmetic.",
+    "version": "test-1"
+  },
+  "purpose": "final_evaluation",
+  "record_kind": "synthetic",
+  "run_id": "RUN-SAFE-TEST-001",
+  "schema_version": "1.0",
+  "seed": 0,
+  "split": "test",
+  "validators": [
+    {
+      "config": {},
+      "name": "Synthetic decisions A",
+      "success_construct": "synthetic-card-match",
+      "validator_id": "VAL-A",
+      "version": "test-1"
+    },
+    {
+      "config": {},
+      "name": "Synthetic decisions B",
+      "success_construct": "synthetic-card-match",
+      "validator_id": "VAL-B",
+      "version": "test-1"
+    }
+  ]
+}

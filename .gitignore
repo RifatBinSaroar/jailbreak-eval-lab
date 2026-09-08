@@ -12,6 +12,8 @@ data/raw/*
 # Generated outputs
 results/generated/*
 !results/generated/.gitkeep
+results/runs/RUN-*/
+results/runs/.run-staging-*/
 
 # Front-end build artefacts
 apps/web/node_modules/

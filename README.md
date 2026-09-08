@@ -50,3 +50,18 @@ This repository is intentionally public. Public code, metadata, documentation, a
 **v0.1 research scaffold — under construction.**
 
 No novelty claim or experimental conclusion should be treated as established until supported by the literature review and held-out empirical evaluation.
+
+## Experiment infrastructure (Python only)
+
+Record existing predictions and human reference labels in immutable run bundles,
+calculate metrics with explicit denominators, and rebuild website result JSON.
+No models or response code are executed by these commands.
+
+```sh
+python -m unittest discover -s tests -v
+python scripts/experiment.py rebuild-web
+```
+
+See [the experiment framework guide](docs/EXPERIMENT_FRAMEWORK.md) for easy local
+instructions, input formats, split protections, metric definitions, and future
+run recording. No npm or Python packages are required (Python 3.10+).
