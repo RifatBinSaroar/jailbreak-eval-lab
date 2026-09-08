@@ -1,207 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jailbreak Evaluation Lab research dashboard" />
-  <title>JailbreakEval</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence, research readiness and reproducible results for the Jailbreak Evaluation Lab.">
+  <title>Research overview · JailbreakEval</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="views.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#workspace">Skip to workspace</a>
   <div class="app-shell">
     <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">J</div>
-        <div>
-          <div class="brand-name">JailbreakEval</div>
-          <div class="brand-sub">Research Lab</div>
-        </div>
+      <div class="brand-row">
+        <a class="brand" href="#overview" aria-label="JailbreakEval overview">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-name">JailbreakEval</span><span class="brand-sub">Research Lab</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
       </div>
-
-      <nav class="nav-group" aria-label="Primary navigation">
-        <a class="nav-item active" href="#home"><span>⌂</span>Home</a>
-        <a class="nav-item" href="#run"><span>▷</span>Run Evaluation</a>
-        <a class="nav-item" href="#experiments"><span>▦</span>Experiments</a>
-        <a class="nav-item" href="#datasets"><span>◫</span>Datasets</a>
-        <a class="nav-item" href="#validators"><span>◇</span>Validators</a>
-        <a class="nav-item" href="#results"><span>▥</span>Results</a>
-        <a class="nav-item" href="#visuals"><span>⌁</span>Visualisations</a>
-        <a class="nav-item" href="#reports"><span>▤</span>Reports</a>
-      </nav>
-
-      <div class="sidebar-divider"></div>
-      <nav class="nav-group secondary-nav">
-        <a class="nav-item" href="#docs"><span>?</span>Documentation</a>
-        <a class="nav-item" href="#papers"><span>▧</span>Papers & References</a>
-        <a class="nav-item" href="#settings"><span>⚙</span>Settings</a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <div class="status-dot"></div>
-        <div>
-          <strong>Research scaffold v0.1</strong>
-          <small>Hypothesis not yet proven</small>
-        </div>
+      <div id="navigation">
+        <p class="nav-caption">Workspace</p>
+        <nav class="nav-group" aria-label="Primary navigation">
+          <a class="nav-item" href="#overview"><span aria-hidden="true">01</span>Overview</a>
+          <a class="nav-item" href="#literature"><span aria-hidden="true">02</span>Literature explorer</a>
+          <a class="nav-item" href="#validators"><span aria-hidden="true">03</span>Validators</a>
+          <a class="nav-item" href="#benchmarks"><span aria-hidden="true">04</span>Benchmarks</a>
+          <a class="nav-item" href="#domains"><span aria-hidden="true">05</span>Domains & subdomains</a>
+          <a class="nav-item" href="#experiments"><span aria-hidden="true">06</span>Experiment registry</a>
+          <a class="nav-item" href="#results"><span aria-hidden="true">07</span>Results</a>
+          <a class="nav-item" href="#gaps"><span aria-hidden="true">08</span>Gaps & novelty threats</a>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <a class="nav-item" href="README.md">Local run & data guide <span aria-hidden="true">↗</span></a>
       </div>
+      <div class="sidebar-footer"><strong>Evidence before conclusions</strong><small>Research infrastructure</small></div>
     </aside>
-
-    <main class="main" id="home">
+    <main class="main" id="workspace" tabindex="-1">
       <header class="topbar">
-        <div>
-          <div class="eyebrow">Research dashboard</div>
-          <h1>A Deeper Look at Jailbreak Success</h1>
-          <p class="subtitle">Explore how general, domain-specific, and functional validators measure the same jailbreak responses.</p>
-        </div>
-        <div class="top-actions">
-          <button class="icon-button" aria-label="Notifications">●</button>
-          <button class="avatar-button" aria-label="Profile">RS</button>
-        </div>
+        <div><p class="eyebrow">Research workspace</p><h1 id="page-title">Research overview</h1><p class="subtitle" id="page-description">Loading the research registries…</p></div>
+        <button class="button secondary" type="button" id="reload">Refresh data</button>
       </header>
-
-      <section class="summary-grid" aria-label="Research summary">
-        <article class="summary-card blue-card">
-          <div class="summary-icon">▤</div>
-          <div>
-            <span>Working direction</span>
-            <strong>Validation</strong>
-            <small>Evaluation of jailbreak success</small>
-          </div>
-        </article>
-        <article class="summary-card purple-card">
-          <div class="summary-icon">◇</div>
-          <div>
-            <span>Current domain</span>
-            <strong>Malicious code</strong>
-            <small>Subdomain not locked</small>
-          </div>
-        </article>
-        <article class="summary-card green-card">
-          <div class="summary-icon">✓</div>
-          <div>
-            <span>Core hypothesis</span>
-            <strong>Specialisation may help</strong>
-            <small>To be tested against humans</small>
-          </div>
-        </article>
-        <article class="summary-card peach-card">
-          <div class="summary-icon">◎</div>
-          <div>
-            <span>Working candidate</span>
-            <strong>Ransomware</strong>
-            <small>Not yet selected</small>
-          </div>
-        </article>
-      </section>
-
-      <section class="content-grid">
-        <article class="panel large-panel" id="experiments">
-          <div class="panel-heading">
-            <div>
-              <div class="eyebrow">Experiment v0.1</div>
-              <h2>Same responses. Different validators.</h2>
-            </div>
-            <span class="pill">Design stage</span>
-          </div>
-          <div class="experiment-flow">
-            <div class="flow-card">
-              <span class="flow-number">1</span>
-              <strong>Choose one subdomain</strong>
-              <small>Evidence-led selection</small>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-card">
-              <span class="flow-number">2</span>
-              <strong>Collect model responses</strong>
-              <small>Shared evaluation set</small>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-card highlighted">
-              <span class="flow-number">3</span>
-              <strong>Human ground truth</strong>
-              <small>Independent labels + adjudication</small>
-            </div>
-          </div>
-          <div class="validator-row">
-            <div class="validator-chip">Generic LLM judge</div>
-            <div class="validator-chip">RMCBench-style</div>
-            <div class="validator-chip">CodeJailbreaker / MR</div>
-            <div class="validator-chip">GUIDEDEVAL-style</div>
-            <div class="validator-chip proposed">Our specialised validator</div>
-          </div>
-        </article>
-
-        <article class="panel compact-panel" id="validators">
-          <div class="panel-heading">
-            <div>
-              <div class="eyebrow">Validation ladder</div>
-              <h2>How evaluation evolves</h2>
-            </div>
-          </div>
-          <ol class="ladder">
-            <li><span>General</span><strong>LLM-as-a-judge</strong></li>
-            <li><span>Case-specific</span><strong>GUIDEDEVAL</strong></li>
-            <li><span>Domain-specific</span><strong>RMCBench</strong></li>
-            <li><span>Function-aware</span><strong>Malicious Ratio</strong></li>
-            <li><span>Behavioural</span><strong>RedCode</strong></li>
-            <li class="future"><span>Proposed test</span><strong>Subdomain validator</strong></li>
-          </ol>
-        </article>
-      </section>
-
-      <section class="content-grid lower-grid" id="results">
-        <article class="panel metrics-panel">
-          <div class="panel-heading">
-            <div>
-              <div class="eyebrow">What we will measure</div>
-              <h2>Evaluation quality</h2>
-            </div>
-          </div>
-          <div class="metric-list">
-            <div><strong>Precision</strong><span>Are predicted successes real?</span></div>
-            <div><strong>Recall</strong><span>Are real successes found?</span></div>
-            <div><strong>F1</strong><span>Balance of both</span></div>
-            <div><strong>FPR / FNR</strong><span>Judge error profile</span></div>
-            <div><strong>ASR distortion</strong><span>Does judge choice change the measured attack success rate?</span></div>
-            <div><strong>Attack ranking</strong><span>Does the best-looking attack change under a different validator?</span></div>
-          </div>
-        </article>
-
-        <article class="panel literature-panel" id="papers">
-          <div class="panel-heading">
-            <div>
-              <div class="eyebrow">Anchor literature</div>
-              <h2>Evaluation-focused reading</h2>
-            </div>
-            <button class="text-button" id="togglePapers">Show all</button>
-          </div>
-          <div class="paper-list" id="paperList"></div>
-        </article>
-      </section>
-
-      <section class="panel roadmap-panel" id="visuals">
-        <div class="panel-heading">
-          <div>
-            <div class="eyebrow">Long-term architecture</div>
-            <h2>Prove first. Scale second.</h2>
-          </div>
-        </div>
-        <div class="roadmap">
-          <div class="road-step active"><span>01</span><strong>Prove specialisation</strong><small>One subdomain + human ground truth</small></div>
-          <div class="road-line"></div>
-          <div class="road-step"><span>02</span><strong>Add subdomains</strong><small>Only where evidence supports it</small></div>
-          <div class="road-line"></div>
-          <div class="road-step"><span>03</span><strong>Automatic routing</strong><small>Select the appropriate specialised validator</small></div>
-          <div class="road-line"></div>
-          <div class="road-step"><span>04</span><strong>Unified platform</strong><small>Literature + experiments + results + reports</small></div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <span>Jailbreak Evaluation Lab</span>
-        <span>Evidence first · open research · no result is shown as proven before measurement</span>
-      </footer>
+      <div id="load-status" class="load-status" role="status" aria-live="polite">Loading JSON records…</div>
+      <div id="content" aria-busy="true"></div>
+      <noscript><div class="notice">Enable JavaScript to load the research data. Open this page with VS Code Live Server.</div></noscript>
+      <footer class="footer"><span>Jailbreak Evaluation Lab</span><span>Source-linked evidence · Reproducible results</span></footer>
     </main>
   </div>
-  <script src="app.js"></script>
 </body>
 </html>

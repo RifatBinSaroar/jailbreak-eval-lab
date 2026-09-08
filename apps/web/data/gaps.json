@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "gap_id": "WEB-GAP-STAGED",
+      "title": "Overlap with staged and execution-grounded evaluation",
+      "status": "under review",
+      "kind": "novelty threat",
+      "paper_ids": [
+        "WEB-PAPER-JAWS",
+        "WEB-PAPER-REDCODE",
+        "WEB-PAPER-LITMUS"
+      ],
+      "our_interpretation": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+      "open_questions": [
+        "What exact endpoint and unit of evaluation does each source establish?",
+        "Which parts of the proposed comparison are already covered?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "gap_id": "WEB-GAP-EFFECT",
+      "title": "The exact-effect measurement question",
+      "status": "unresolved",
+      "kind": "candidate question",
+      "paper_ids": [
+        "WEB-PAPER-CONTENT-CONCRETIZATION",
+        "WEB-PAPER-INFINITE-MUTATION"
+      ],
+      "our_interpretation": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap.",
+      "open_questions": [
+        "Do prior effect-level evaluations already answer the proposed question?",
+        "What would the pilot falsify?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "gap_id": "WEB-GAP-JUDGE",
+      "title": "Judge error and ASR distortion are not sufficient novelty claims",
+      "status": "under review",
+      "kind": "novelty threat",
+      "paper_ids": [
+        "WEB-PAPER-MALWAREBENCH",
+        "WEB-PAPER-RMCBENCH",
+        "WEB-PAPER-CODEJAILBREAKER"
+      ],
+      "our_interpretation": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+      "open_questions": [
+        "Which comparison would add evidence beyond existing judge-reliability work?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "gap_id": "WEB-GAP-IDENTITY",
+      "title": "Resolve GUIDEDEVAL / GuidedBench identity and protocol",
+      "status": "unresolved",
+      "kind": "evidence issue",
+      "paper_ids": [
+        "WEB-PAPER-GUIDEDEVAL"
+      ],
+      "our_interpretation": "The synthesis explicitly leaves the naming and protocol unresolved. Baseline selection depends on resolving this item.",
+      "open_questions": [
+        "Are these names referring to the same intended source and evaluation procedure?"
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "project": {
+    "project_id": "PROJECT-JAILBREAK-EVAL",
+    "as_of": "2026-09-08",
+    "direction": "Effect-grounded validation",
+    "status": "Conditional go · novelty under review",
+    "hypothesis": "Effect-grounded, task-specific validation may measure generated-code jailbreak success more accurately than semantic and runtime-oriented evaluators.",
+    "candidate": "Synthetic information theft / exfiltration",
+    "candidate_note": "Primary case-study recommendation from the control room. Selection and feasibility remain open.",
+    "decision": "Test the narrow measurement question before committing to a full benchmark. The broad “first functional jailbreak validator” framing is not supported by the current synthesis.",
+    "scope_note": "This dashboard contains a provisional reading queue and planning records from the synthesis. It is not an import of the Excel literature matrix. Paper findings and experiment measurements have not been populated.",
+    "novelty_note": "Novelty remains under review. Missing or incomplete paper records do not establish a research gap.",
+    "source_links": [
+      {
+        "label": "Control-room synthesis · 8 Sep 2026",
+        "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+      }
+    ],
+    "readiness": [
+      {
+        "id": "READY-LITERATURE",
+        "title": "Verify the closest literature",
+        "status": "pending",
+        "detail": "Check primary papers, tables and code before treating handoff claims as evidence.",
+        "view": "literature"
+      },
+      {
+        "id": "READY-DOMAIN",
+        "title": "Lock the first subdomain",
+        "status": "pending",
+        "detail": "Confirm feasibility of the synthetic information-theft candidate and the control case.",
+        "view": "domains"
+      },
+      {
+        "id": "READY-DATA",
+        "title": "Confirm the dataset and split",
+        "status": "pending",
+        "detail": "Record dataset version, licence and separate development and held-out test manifests.",
+        "view": "benchmarks"
+      },
+      {
+        "id": "READY-LABELS",
+        "title": "Define success and human ground truth",
+        "status": "pending",
+        "detail": "Agree an annotation rubric, independent review and adjudication before comparison.",
+        "view": "experiments"
+      },
+      {
+        "id": "READY-VALIDATORS",
+        "title": "Implement and version the baselines",
+        "status": "pending",
+        "detail": "Select comparable baselines and preserve their success definitions.",
+        "view": "validators"
+      },
+      {
+        "id": "READY-PILOT",
+        "title": "Register the falsification pilot",
+        "status": "pending",
+        "detail": "Create an experiment record with config and provenance before any run.",
+        "view": "experiments"
+      }
+    ],
+    "planned_outcomes": [
+      "Accuracy, precision, recall and F1",
+      "False-positive and false-negative rates",
+      "ASR under each evaluator and ASR differences",
+      "Evaluator disagreement with human ground truth",
+      "Attack and model ranking changes",
+      "Validation-stage ablations and indeterminate cases"
+    ],
+    "open_questions": [
+      "Do semantic success decisions predict the exact requested effect?",
+      "Is compile/runtime success a useful proxy for effect success?",
+      "Does evaluator choice change reported ASR or model and attack rankings?"
+    ]
+  }
+}

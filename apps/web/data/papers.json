@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "paper_id": "WEB-PAPER-JAWS",
+      "title": "JAWS-Bench",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-REDCODE",
+      "title": "RedCode",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-MALWAREBENCH",
+      "title": "MalwareBench",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-CONTENT-CONCRETIZATION",
+      "title": "Content Concretization",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-INFINITE-MUTATION",
+      "title": "The Infinite Mutation Engine",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-LITMUS",
+      "title": "LITMUS",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-RMCBENCH",
+      "title": "RMCBench",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-CODEJAILBREAKER",
+      "title": "Smoke and Mirrors / CodeJailbreaker",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-GUIDEDEVAL",
+      "title": "GUIDEDEVAL / GuidedBench — identity to resolve",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "paper_id": "WEB-PAPER-HARMBENCH",
+      "title": "HarmBench",
+      "year": null,
+      "venue_or_arxiv": null,
+      "url": null,
+      "domain": null,
+      "subdomains": [],
+      "success_definition": null,
+      "validator": null,
+      "evidence_status": "unreviewed",
+      "paper_demonstrates": [],
+      "our_interpretation": [
+        "Listed for primary-source verification in the provisional control-room synthesis."
+      ],
+      "open_questions": [
+        "Confirm the paper identity and direct source link.",
+        "Extract the success definition, evaluation protocol and limitations from primary sources."
+      ],
+      "novelty_threat": "UNKNOWN",
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    }
+  ]
+}

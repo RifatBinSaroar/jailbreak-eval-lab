@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "validator_id": "WEB-VAL-GENERIC-JUDGE",
+      "name": "Generic LLM judge",
+      "role": "Candidate baseline",
+      "status": "planned",
+      "evaluation_type": "semantic",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-HARMFULNESS",
+      "name": "HarmBench-style harmfulness classifier",
+      "role": "Candidate baseline",
+      "status": "planned",
+      "evaluation_type": "semantic",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-MALICIOUS-CODE",
+      "name": "RMCBench-style evaluator",
+      "role": "Candidate baseline",
+      "status": "planned",
+      "evaluation_type": "protocol to verify",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-FUNCTION-AWARE",
+      "name": "CodeJailbreaker / MR-style evaluator",
+      "role": "Candidate baseline",
+      "status": "planned",
+      "evaluation_type": "protocol to verify",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-CASE-SPECIFIC",
+      "name": "GUIDEDEVAL / GuidedBench-style judge",
+      "role": "Identity and protocol unresolved",
+      "status": "planned",
+      "evaluation_type": "protocol to verify",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-RUNTIME",
+      "name": "Compilation / runtime baseline",
+      "role": "Candidate baseline",
+      "status": "planned",
+      "evaluation_type": "runtime",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    },
+    {
+      "validator_id": "WEB-VAL-EFFECT",
+      "name": "Task-specific behavioural oracle",
+      "role": "Proposed method",
+      "status": "planned",
+      "evaluation_type": "behavioural",
+      "version": null,
+      "success_definition": null,
+      "implementation_url": null,
+      "our_interpretation": "A planning candidate from the synthesis. The protocol and implementation have not been registered.",
+      "open_questions": [
+        "Fix the exact success definition and version before comparing outputs."
+      ],
+      "source_links": [
+        {
+          "label": "Control-room synthesis · 8 Sep 2026",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ]
+    }
+  ]
+}
