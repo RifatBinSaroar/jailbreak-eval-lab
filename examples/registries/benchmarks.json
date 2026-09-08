@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "benchmarks",
+  "records": [
+    {
+      "id": "benchmark:template-manifest",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "name": "TEMPLATE \u2014 benchmark manifest",
+      "description": "Metadata shape only; no dataset retrieved.",
+      "domain_ids": [
+        "subdomain:template-text-presence"
+      ],
+      "paper_ids": [],
+      "provenance": {
+        "source": {
+          "id": "source:template-placeholder",
+          "url": "https://example.invalid/replace-with-source",
+          "locator": "TEMPLATE ONLY. Replace with an exact source location."
+        },
+        "upstream_version": null,
+        "license": null,
+        "retrieved_at": null,
+        "redistribution": "unknown",
+        "transformations": []
+      },
+      "manifest": null
+    }
+  ]
+}

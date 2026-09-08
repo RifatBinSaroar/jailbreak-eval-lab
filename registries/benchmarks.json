@@ -1,0 +1,87 @@
+{
+  "records": [
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:jaws",
+      "manifest": null,
+      "name": "JAWS-Bench",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-jaws"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:redcode",
+      "manifest": null,
+      "name": "RedCode",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-redcode"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:malwarebench",
+      "manifest": null,
+      "name": "MalwareBench",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-malwarebench"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "registry": "benchmarks",
+  "schema_version": "1.0.0"
+}

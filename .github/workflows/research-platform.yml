@@ -1,0 +1,55 @@
+name: Research Platform integration
+
+on:
+  pull_request:
+  push:
+    branches: [main, feat/research-platform-v0.1-integration]
+
+permissions:
+  contents: read
+
+jobs:
+  integration:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.10'
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: ubuntu-latest
+            python: '3.13'
+          - os: windows-latest
+            python: '3.12'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -e ".[dev]"
+      - name: Validate all canonical registries and local provenance
+        run: python -m jailbreak_eval.registry validate --artifact-root .
+      - name: Validate separate unmeasured templates
+        run: python -m jailbreak_eval.registry validate --directory examples/registries --allow-templates
+      - name: Safe synthetic integration and regression tests
+        run: python -m pytest -q
+      - name: Dashboard canonical parsing and eight-view rendering
+        run: node --test apps/web/tests/data.test.cjs
+      - name: Preserve history in every intervening commit
+        if: github.event_name == 'pull_request'
+        env:
+          REGISTRY_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: python scripts/check_registry_history.py --base "$REGISTRY_BASE_SHA"
+      - name: Rebuild the single canonical website export
+        run: python scripts/research.py build-web
+      - name: Generated production data matches source registries
+        run: git diff --exit-code -- apps/web/data/research.json
+      - run: git diff --check

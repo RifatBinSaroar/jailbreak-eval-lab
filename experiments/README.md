@@ -1,19 +1,11 @@
 # Experiments
 
-Experiment code belongs here only after the protocol is written down.
+Canonical definitions live in `registries/experiments.json`, with immutable same-ID revisions.
+The human-readable EXP-001 code is preserved beside the stable namespaced ID.
 
-## Planned first experiment
+Define/version the protocol, dataset, validators, models, attack methods, code commit, config,
+human-reference rubric and split before recording collected outputs. Pilot, development and final
+test are separate. A final test requires a frozen protocol and final_evaluation purpose.
 
-- one narrow subdomain
-- shared held-out response set
-- human ground truth
-- 3–4 fair automated baselines
-- proposed specialised validator
-- primary classification metrics
-- uncertainty / confidence intervals where appropriate
-- ablation study
-- error taxonomy
-- ASR distortion analysis
-- attack-ranking sensitivity analysis
-
-Every run should save its configuration, input manifest, validator versions, random seed where relevant, and generated result artefacts.
+See [the easy workflow](../docs/PLATFORM_QUICKSTART.md) and
+[offline capture and analysis](../docs/EXPERIMENT_FRAMEWORK.md). No experiment has been run.

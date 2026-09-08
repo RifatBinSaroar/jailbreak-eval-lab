@@ -2,6 +2,9 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+*.egg-info/
+build/
+dist/
 .env
 .DS_Store
 
@@ -12,8 +15,19 @@ data/raw/*
 # Generated outputs
 results/generated/*
 !results/generated/.gitkeep
+results/runs/RUN-*/
+results/runs/.run-staging-*/
 
 # Front-end build artefacts
 apps/web/node_modules/
 apps/web/dist/
 apps/web/.next/
+
+# User source workbooks remain local.
+*.xlsx
+*.xls
+# Local captured definitions and interrupted write state.
+data/manifests/captured/
+.registries-write.lock
+.registries-stage-*/
+.registries-backup/

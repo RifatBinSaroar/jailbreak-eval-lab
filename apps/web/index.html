@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence, research readiness and reproducible results for the Jailbreak Evaluation Lab.">
+  <title>Research overview · JailbreakEval</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="views.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-row">
+        <a class="brand" href="#overview" aria-label="JailbreakEval overview">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-name">JailbreakEval</span><span class="brand-sub">Research Lab</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      </div>
+      <div id="navigation">
+        <p class="nav-caption">Workspace</p>
+        <nav class="nav-group" aria-label="Primary navigation">
+          <a class="nav-item" href="#overview"><span aria-hidden="true">01</span>Overview</a>
+          <a class="nav-item" href="#literature"><span aria-hidden="true">02</span>Literature explorer</a>
+          <a class="nav-item" href="#validators"><span aria-hidden="true">03</span>Validators</a>
+          <a class="nav-item" href="#benchmarks"><span aria-hidden="true">04</span>Benchmarks</a>
+          <a class="nav-item" href="#domains"><span aria-hidden="true">05</span>Domains & subdomains</a>
+          <a class="nav-item" href="#experiments"><span aria-hidden="true">06</span>Experiment registry</a>
+          <a class="nav-item" href="#results"><span aria-hidden="true">07</span>Results</a>
+          <a class="nav-item" href="#gaps"><span aria-hidden="true">08</span>Gaps & novelty threats</a>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <a class="nav-item" href="README.md">Local run & data guide <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="sidebar-footer"><strong>Evidence before conclusions</strong><small>Research infrastructure</small></div>
+    </aside>
+    <main class="main" id="workspace" tabindex="-1">
+      <header class="topbar">
+        <div><p class="eyebrow">Research workspace</p><h1 id="page-title">Research overview</h1><p class="subtitle" id="page-description">Loading the research registries…</p></div>
+        <button class="button secondary" type="button" id="reload">Refresh data</button>
+      </header>
+      <div id="load-status" class="load-status" role="status" aria-live="polite">Loading JSON records…</div>
+      <div id="content" aria-busy="true"></div>
+      <noscript><div class="notice">Enable JavaScript to load the research data. Open this page with VS Code Live Server.</div></noscript>
+      <footer class="footer"><span>Jailbreak Evaluation Lab</span><span>Source-linked evidence · Reproducible results</span></footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,32 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "PaperRecord",
-  "type": "object",
-  "required": ["paper_id", "title", "year", "url", "success_definition", "validator", "evidence_status"],
-  "properties": {
-    "paper_id": {"type": "string"},
-    "title": {"type": "string"},
-    "year": {"type": "integer"},
-    "venue_or_arxiv": {"type": "string"},
-    "url": {"type": "string"},
-    "research_problem": {"type": "string"},
-    "benchmark": {"type": "string"},
-    "domain": {"type": "string"},
-    "subdomains": {"type": "array", "items": {"type": "string"}},
-    "success_definition": {"type": "string"},
-    "validator": {"type": "string"},
-    "labels_or_score": {"type": "string"},
-    "evaluation_type": {"type": "array", "items": {"enum": ["semantic", "static", "functional", "behavioural", "hybrid", "other"]}},
-    "executes_code": {"type": ["boolean", "null"]},
-    "human_ground_truth": {"type": "string"},
-    "metrics": {"type": "array", "items": {"type": "string"}},
-    "false_positive_evidence": {"type": "string"},
-    "false_negative_evidence": {"type": "string"},
-    "authors_limitations": {"type": "array", "items": {"type": "string"}},
-    "paper_demonstrates": {"type": "array", "items": {"type": "string"}},
-    "our_interpretation": {"type": "array", "items": {"type": "string"}},
-    "open_questions": {"type": "array", "items": {"type": "string"}},
-    "novelty_threat": {"enum": ["LOW", "MEDIUM", "HIGH", "FATAL", "UNKNOWN"]},
-    "evidence_status": {"enum": ["screened", "deep-reviewed", "verified"]}
-  }
+  "title": "Paper record \u2014 canonical registry v1",
+  "$comment": "Compatibility entry point. Old scaffold fields require explicit migration; see docs/REGISTRIES.md.",
+  "$ref": "../src/jailbreak_eval/schemas/registry.schema.json#/$defs/paper"
 }

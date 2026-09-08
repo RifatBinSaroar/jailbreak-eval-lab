@@ -1,0 +1,120 @@
+{
+  "artifact_kind": "literature_intake",
+  "paper_id": "paper:queue-redcode",
+  "source": {
+    "columns": [
+      {
+        "cell": "title",
+        "header": "title",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "RedCode"
+      },
+      {
+        "cell": "year",
+        "header": "year",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "venue_or_arxiv",
+        "header": "venue_or_arxiv",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "url",
+        "header": "url",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "domain",
+        "header": "domain",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "subdomains",
+        "header": "subdomains",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": []
+      },
+      {
+        "cell": "success_definition",
+        "header": "success_definition",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "validator",
+        "header": "validator",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": null
+      },
+      {
+        "cell": "evidence_status",
+        "header": "evidence_status",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "unreviewed"
+      },
+      {
+        "cell": "paper_demonstrates",
+        "header": "paper_demonstrates",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": []
+      },
+      {
+        "cell": "our_interpretation",
+        "header": "our_interpretation",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": [
+          "Listed for primary-source verification in the provisional control-room synthesis."
+        ]
+      },
+      {
+        "cell": "open_questions",
+        "header": "open_questions",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": [
+          "Confirm the paper identity and direct source link.",
+          "Extract the success definition, evaluation protocol and limitations from primary sources."
+        ]
+      },
+      {
+        "cell": "novelty_threat",
+        "header": "novelty_threat",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": "UNKNOWN"
+      },
+      {
+        "cell": "source_links",
+        "header": "source_links",
+        "hyperlink": null,
+        "is_formula": false,
+        "value": [
+          {
+            "label": "Control-room synthesis · 8 Sep 2026",
+            "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+          }
+        ]
+      }
+    ],
+    "file": "control-room-reading-queue.json",
+    "row": 2,
+    "sha256": "a1ed6ba83c722e9a4227b7cca84ddbf99b60523b5acc34d169148f8fd0d2334f",
+    "sheet": null
+  }
+}

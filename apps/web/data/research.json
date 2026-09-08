@@ -1,0 +1,2732 @@
+{
+  "benchmarks": [
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:jaws",
+      "manifest": null,
+      "name": "JAWS-Bench",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-jaws"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:malwarebench",
+      "manifest": null,
+      "name": "MalwareBench",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-malwarebench"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "description": "Review for prior-work overlap and possible data suitability. Inclusion is not a dataset selection.",
+      "domain_ids": [],
+      "id": "benchmark:redcode",
+      "manifest": null,
+      "name": "RedCode",
+      "notes": "Planning candidate; upstream metadata unverified.",
+      "paper_ids": [
+        "paper:queue-redcode"
+      ],
+      "provenance": {
+        "license": null,
+        "redistribution": "unknown",
+        "retrieved_at": null,
+        "source": {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        },
+        "transformations": [],
+        "upstream_version": null
+      },
+      "record_kind": "research",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "contract": "research-platform/0.1",
+  "datasets": [],
+  "domains": [
+    {
+      "definition": "The current measurement question concerns generated code. No subdomain is locked.",
+      "exclusion_criteria": [],
+      "id": "domain:code",
+      "inclusion_criteria": [],
+      "level": "domain",
+      "name": "Malicious code",
+      "notes": "study scope. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": null,
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "definition": "Recommended as a potential harness control; the synthesis flags greater prior-work saturation.",
+      "exclusion_criteria": [],
+      "id": "subdomain:filesystem",
+      "inclusion_criteria": [],
+      "level": "subdomain",
+      "name": "Filesystem impact / ransomware-like behaviour",
+      "notes": "control candidate. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": "domain:code",
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "definition": "Recommended first case study. Feasibility and prior-work checks remain open.",
+      "exclusion_criteria": [],
+      "id": "subdomain:information-theft",
+      "inclusion_criteria": [],
+      "level": "subdomain",
+      "name": "Synthetic information theft / exfiltration",
+      "notes": "primary candidate. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "paper_ids": [],
+      "parent_id": "domain:code",
+      "record_kind": "research",
+      "status": "candidate",
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "duplicate_candidates": [],
+  "excluded_synthetic_run_ids": [],
+  "experiments": [],
+  "human_labels": [],
+  "include_synthetic": false,
+  "metrics": [],
+  "novelty_note": "Novelty remains subject to manual evidence review. Missing literature never establishes a research gap.",
+  "novelty_threats": [
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-codejailbreaker",
+      "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+      "status": "under_review",
+      "title": "Smoke and Mirrors / CodeJailbreaker"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-content-concretization",
+      "rationale": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap.",
+      "status": "under_review",
+      "title": "Content Concretization"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-guidedeval",
+      "rationale": "The synthesis explicitly leaves the naming and protocol unresolved. Baseline selection depends on resolving this item.",
+      "status": "under_review",
+      "title": "GUIDEDEVAL / GuidedBench — identity to resolve"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-infinite-mutation",
+      "rationale": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap.",
+      "status": "under_review",
+      "title": "The Infinite Mutation Engine"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-jaws",
+      "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+      "status": "under_review",
+      "title": "JAWS-Bench"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-litmus",
+      "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+      "status": "under_review",
+      "title": "LITMUS"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-malwarebench",
+      "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+      "status": "under_review",
+      "title": "MalwareBench"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-redcode",
+      "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+      "status": "under_review",
+      "title": "RedCode"
+    },
+    {
+      "basis": "manual_evidence_review",
+      "evidence_ids": [],
+      "paper_id": "paper:queue-rmcbench",
+      "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+      "status": "under_review",
+      "title": "RMCBench"
+    }
+  ],
+  "open_questions": [
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-codejailbreaker-1",
+      "paper_id": "paper:queue-codejailbreaker",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-codejailbreaker-2",
+      "paper_id": "paper:queue-codejailbreaker",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-codejailbreaker-judge-1",
+      "paper_id": "paper:queue-codejailbreaker",
+      "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-content-concretization-1",
+      "paper_id": "paper:queue-content-concretization",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-content-concretization-2",
+      "paper_id": "paper:queue-content-concretization",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-content-concretization-effect-1",
+      "paper_id": "paper:queue-content-concretization",
+      "text": "Do prior effect-level evaluations already answer the proposed question?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-content-concretization-effect-2",
+      "paper_id": "paper:queue-content-concretization",
+      "text": "What would the pilot falsify?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-guidedeval-1",
+      "paper_id": "paper:queue-guidedeval",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-guidedeval-2",
+      "paper_id": "paper:queue-guidedeval",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-guidedeval-identity-1",
+      "paper_id": "paper:queue-guidedeval",
+      "text": "Are these names referring to the same intended source and evaluation procedure?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-harmbench-1",
+      "paper_id": "paper:queue-harmbench",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-harmbench-2",
+      "paper_id": "paper:queue-harmbench",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-infinite-mutation-1",
+      "paper_id": "paper:queue-infinite-mutation",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-infinite-mutation-2",
+      "paper_id": "paper:queue-infinite-mutation",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-infinite-mutation-effect-1",
+      "paper_id": "paper:queue-infinite-mutation",
+      "text": "Do prior effect-level evaluations already answer the proposed question?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-infinite-mutation-effect-2",
+      "paper_id": "paper:queue-infinite-mutation",
+      "text": "What would the pilot falsify?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-jaws-1",
+      "paper_id": "paper:queue-jaws",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-jaws-2",
+      "paper_id": "paper:queue-jaws",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-jaws-staged-1",
+      "paper_id": "paper:queue-jaws",
+      "text": "What exact endpoint and unit of evaluation does each source establish?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-jaws-staged-2",
+      "paper_id": "paper:queue-jaws",
+      "text": "Which parts of the proposed comparison are already covered?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-litmus-1",
+      "paper_id": "paper:queue-litmus",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-litmus-2",
+      "paper_id": "paper:queue-litmus",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-litmus-staged-1",
+      "paper_id": "paper:queue-litmus",
+      "text": "What exact endpoint and unit of evaluation does each source establish?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-litmus-staged-2",
+      "paper_id": "paper:queue-litmus",
+      "text": "Which parts of the proposed comparison are already covered?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-malwarebench-1",
+      "paper_id": "paper:queue-malwarebench",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-malwarebench-2",
+      "paper_id": "paper:queue-malwarebench",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-malwarebench-judge-1",
+      "paper_id": "paper:queue-malwarebench",
+      "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-redcode-1",
+      "paper_id": "paper:queue-redcode",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-redcode-2",
+      "paper_id": "paper:queue-redcode",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-redcode-staged-1",
+      "paper_id": "paper:queue-redcode",
+      "text": "What exact endpoint and unit of evaluation does each source establish?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-redcode-staged-2",
+      "paper_id": "paper:queue-redcode",
+      "text": "Which parts of the proposed comparison are already covered?"
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-rmcbench-1",
+      "paper_id": "paper:queue-rmcbench",
+      "text": "Confirm the paper identity and direct source link."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-rmcbench-2",
+      "paper_id": "paper:queue-rmcbench",
+      "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+    },
+    {
+      "category": "unresolved_question",
+      "id": "question:queue-rmcbench-judge-1",
+      "paper_id": "paper:queue-rmcbench",
+      "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+    }
+  ],
+  "paper_evidence": [],
+  "papers": [
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-024166c33aeef022",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-523f26c61bedae087fad2b54d85e464c405aba0168c1330ee5c9e8179563fc82",
+          "media_type": "application/json",
+          "sha256": "523f26c61bedae087fad2b54d85e464c405aba0168c1330ee5c9e8179563fc82",
+          "uri": "literature/intake/523f26c61bedae087fad2b54d85e464c405aba0168c1330ee5c9e8179563fc82.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-08c2d25d8372500a",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-24cfd6a02569aea5a976712d2864dde0ee5f0bcc620908c2a8a3b93aff8baa3a",
+          "media_type": "application/json",
+          "sha256": "24cfd6a02569aea5a976712d2864dde0ee5f0bcc620908c2a8a3b93aff8baa3a",
+          "uri": "literature/intake/24cfd6a02569aea5a976712d2864dde0ee5f0bcc620908c2a8a3b93aff8baa3a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-21aba86347469452",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-969976f1c6bdbb57308a18d86fe7c7633729da82df801b6799210dd71eafe2b1",
+          "media_type": "application/json",
+          "sha256": "969976f1c6bdbb57308a18d86fe7c7633729da82df801b6799210dd71eafe2b1",
+          "uri": "literature/intake/969976f1c6bdbb57308a18d86fe7c7633729da82df801b6799210dd71eafe2b1.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "“Do Anything Now”: Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-2312828544be3a7c",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-e91697f45d63ae83083a39a3fc64f1d1f2747bcab6e47181a81a382b11556147",
+          "media_type": "application/json",
+          "sha256": "e91697f45d63ae83083a39a3fc64f1d1f2747bcab6e47181a81a382b11556147",
+          "uri": "literature/intake/e91697f45d63ae83083a39a3fc64f1d1f2747bcab6e47181a81a382b11556147.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Detecting Language Model Attacks with Perplexity",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-2443a7c001e1c885",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-58a762c1cc786fdaa242aa16cef43e054cb076dbee0fb8bbb2c03178f7d8419c",
+          "media_type": "application/json",
+          "sha256": "58a762c1cc786fdaa242aa16cef43e054cb076dbee0fb8bbb2c03178f7d8419c",
+          "uri": "literature/intake/58a762c1cc786fdaa242aa16cef43e054cb076dbee0fb8bbb2c03178f7d8419c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "JailbreakLens: Interpreting Jailbreak Mechanisms through Representations and Circuits",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-2b3c86fab10d91c5",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-fd89fd47e290b38400f721ff0bd13c5fe834d85ed1f66ce2073168f4063efc3e",
+          "media_type": "application/json",
+          "sha256": "fd89fd47e290b38400f721ff0bd13c5fe834d85ed1f66ce2073168f4063efc3e",
+          "uri": "literature/intake/fd89fd47e290b38400f721ff0bd13c5fe834d85ed1f66ce2073168f4063efc3e.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Finding and Reactivating Post-Trained LLMs’ Hidden Safety Mechanisms",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-321b78005d0a3785",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-1dbdfb542a041107c294be4164a3778c295e433299b4de3b564ee9818b7253bc",
+          "media_type": "application/json",
+          "sha256": "1dbdfb542a041107c294be4164a3778c295e433299b4de3b564ee9818b7253bc",
+          "uri": "literature/intake/1dbdfb542a041107c294be4164a3778c295e433299b4de3b564ee9818b7253bc.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "TEMPLATEFUZZ: Fine-Grained Chat Template Fuzzing for Jailbreaking and Red Teaming LLMs",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-3302e3e04aab299d",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-b44f300f523a1a368b23bc9f13498b0e9939cfd5fec27684c695f474a9861b9b",
+          "media_type": "application/json",
+          "sha256": "b44f300f523a1a368b23bc9f13498b0e9939cfd5fec27684c695f474a9861b9b",
+          "uri": "literature/intake/b44f300f523a1a368b23bc9f13498b0e9939cfd5fec27684c695f474a9861b9b.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "SoK: Robustness in Large Language Models against Jailbreak Attacks",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-34e522d625751063",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-144f8e072aeba7531a3c68235b88c4bced15c4c34d93569e198b3960610547bd",
+          "media_type": "application/json",
+          "sha256": "144f8e072aeba7531a3c68235b88c4bced15c4c34d93569e198b3960610547bd",
+          "uri": "literature/intake/144f8e072aeba7531a3c68235b88c4bced15c4c34d93569e198b3960610547bd.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "DUALBREACH: Efficient Dual-Jailbreaking via Target-Driven Initialization and Multi-Target Optimization",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-502bcf8276b97671",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-88cd3f5bdf6b50e2f56077d0ef011c2aca7e08006302d5a7d1876d4398494b8c",
+          "media_type": "application/json",
+          "sha256": "88cd3f5bdf6b50e2f56077d0ef011c2aca7e08006302d5a7d1876d4398494b8c",
+          "uri": "literature/intake/88cd3f5bdf6b50e2f56077d0ef011c2aca7e08006302d5a7d1876d4398494b8c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "NeuroStrike: Neuron-Level Attacks on Aligned LLMs",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-5a550480b2eadae4",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-c30260f6e7e29fa2ffa5a84936f0ab002b91e165822d19bd542145a5955e2c2b",
+          "media_type": "application/json",
+          "sha256": "c30260f6e7e29fa2ffa5a84936f0ab002b91e165822d19bd542145a5955e2c2b",
+          "uri": "literature/intake/c30260f6e7e29fa2ffa5a84936f0ab002b91e165822d19bd542145a5955e2c2b.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Red Teaming LLMs via Linguistic-Aware Fuzzing",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-5bbfc09d784edff8",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-d0102a0bd21abdbd55dbce3f05685ed23c64b5a3b50d81221ef2e4e7daeb65e6",
+          "media_type": "application/json",
+          "sha256": "d0102a0bd21abdbd55dbce3f05685ed23c64b5a3b50d81221ef2e4e7daeb65e6",
+          "uri": "literature/intake/d0102a0bd21abdbd55dbce3f05685ed23c64b5a3b50d81221ef2e4e7daeb65e6.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "CodeChameleon: Personalized Encryption Framework for Jailbreaking Large Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-632ddcff23fb2681",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-e8894f2b9921b219cbc26ab22f9cdc359a184638e879f1985bd4f911cac9547c",
+          "media_type": "application/json",
+          "sha256": "e8894f2b9921b219cbc26ab22f9cdc359a184638e879f1985bd4f911cac9547c",
+          "uri": "literature/intake/e8894f2b9921b219cbc26ab22f9cdc359a184638e879f1985bd4f911cac9547c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "SoK: Evaluating Jailbreak Guardrails for Large Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-648e186fe71b529b",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-bb813d76e11b31980cb9289eaf8c1f115c8ff7077e52c19e8d7e08dfda88df3f",
+          "media_type": "application/json",
+          "sha256": "bb813d76e11b31980cb9289eaf8c1f115c8ff7077e52c19e8d7e08dfda88df3f",
+          "uri": "literature/intake/bb813d76e11b31980cb9289eaf8c1f115c8ff7077e52c19e8d7e08dfda88df3f.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-656576777e35925b",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-d64d92968235f22639de935f082e09fcb69a3ee438e62841edb3212852ca0e08",
+          "media_type": "application/json",
+          "sha256": "d64d92968235f22639de935f082e09fcb69a3ee438e62841edb3212852ca0e08",
+          "uri": "literature/intake/d64d92968235f22639de935f082e09fcb69a3ee438e62841edb3212852ca0e08.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Activation-Guided Local Editing for Jailbreaking Attacks",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-65c107fda13348a2",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-c696bfc1dee91412034616ef53bd4a37266e357d4b06daf718545b2ea34a4957",
+          "media_type": "application/json",
+          "sha256": "c696bfc1dee91412034616ef53bd4a37266e357d4b06daf718545b2ea34a4957",
+          "uri": "literature/intake/c696bfc1dee91412034616ef53bd4a37266e357d4b06daf718545b2ea34a4957.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-6be69ba14f623d68",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-795581c7ab7305dbf7455de6c12d05586b64967bda7fc33a7b8a6bb8423a698e",
+          "media_type": "application/json",
+          "sha256": "795581c7ab7305dbf7455de6c12d05586b64967bda7fc33a7b8a6bb8423a698e",
+          "uri": "literature/intake/795581c7ab7305dbf7455de6c12d05586b64967bda7fc33a7b8a6bb8423a698e.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "RMCBench: Benchmarking Large Language Models’ Resistance to Malicious Code",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-723c463e134af563",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-87ca365db6077618b12f4ce07ab04c02e0d346fdb2ea88bd2b81911abf05bdfa",
+          "media_type": "application/json",
+          "sha256": "87ca365db6077618b12f4ce07ab04c02e0d346fdb2ea88bd2b81911abf05bdfa",
+          "uri": "literature/intake/87ca365db6077618b12f4ce07ab04c02e0d346fdb2ea88bd2b81911abf05bdfa.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "PAIR: Jailbreaking Black Box Large Language Models in Twenty Queries",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-7dbd226ac480ab1c",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-5cb48363446b91781a3d3789cf43d758f7f00feefd4afd00968b66c3d944f25c",
+          "media_type": "application/json",
+          "sha256": "5cb48363446b91781a3d3789cf43d758f7f00feefd4afd00968b66c3d944f25c",
+          "uri": "literature/intake/5cb48363446b91781a3d3789cf43d758f7f00feefd4afd00968b66c3d944f25c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "A Wolf in Sheep’s Clothing: Generalized Nested Jailbreak Prompts Can Fool Large Language Models Easily",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-7e65e3b9a23aaab3",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-ec296c85d709fed174760913538fce8a07677b145d3c95200a9e0c62a8c2d215",
+          "media_type": "application/json",
+          "sha256": "ec296c85d709fed174760913538fce8a07677b145d3c95200a9e0c62a8c2d215",
+          "uri": "literature/intake/ec296c85d709fed174760913538fce8a07677b145d3c95200a9e0c62a8c2d215.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Refusal in Language Models Is Mediated by a Single Direction",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-898ee3df41963e8e",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-6e9d42732118bb1c0783a36476bed852888e3db36a4a651fd6b1098419e61ca0",
+          "media_type": "application/json",
+          "sha256": "6e9d42732118bb1c0783a36476bed852888e3db36a4a651fd6b1098419e61ca0",
+          "uri": "literature/intake/6e9d42732118bb1c0783a36476bed852888e3db36a4a651fd6b1098419e61ca0.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "When “Competency” in Reasoning Opens the Door to Vulnerability: Jailbreaking LLMs via Novel Complex Ciphers",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-8d7bc23168843c1d",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-04ee6e3b53990c597ed624b119b47ba730ccc1d399567a3724ccabe600d759c8",
+          "media_type": "application/json",
+          "sha256": "04ee6e3b53990c597ed624b119b47ba730ccc1d399567a3724ccabe600d759c8",
+          "uri": "literature/intake/04ee6e3b53990c597ed624b119b47ba730ccc1d399567a3724ccabe600d759c8.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "WordGame: Efficient and Effective LLM Jailbreak via Simultaneous Obfuscation in Query and Response",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-9068215f6088889e",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-786ac2260aa26cc5329c7225fc00d54d6bd5456df0087e22a37956b614a365c2",
+          "media_type": "application/json",
+          "sha256": "786ac2260aa26cc5329c7225fc00d54d6bd5456df0087e22a37956b614a365c2",
+          "uri": "literature/intake/786ac2260aa26cc5329c7225fc00d54d6bd5456df0087e22a37956b614a365c2.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-9a986706d80f157f",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-3aca59e435257185a832c414fb1f96d9d413a649cc337a11012c96b97fae41ad",
+          "media_type": "application/json",
+          "sha256": "3aca59e435257185a832c414fb1f96d9d413a649cc337a11012c96b97fae41ad",
+          "uri": "literature/intake/3aca59e435257185a832c414fb1f96d9d413a649cc337a11012c96b97fae41ad.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "GPT-4 Is Too Smart To Be Safe: Stealthy Chat with LLMs via Cipher",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-9fa6746f45883434",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-52eec57d373b3e9bf1222bff24322cd117016b79b915cffc0be44e6f574cd066",
+          "media_type": "application/json",
+          "sha256": "52eec57d373b3e9bf1222bff24322cd117016b79b915cffc0be44e6f574cd066",
+          "uri": "literature/intake/52eec57d373b3e9bf1222bff24322cd117016b79b915cffc0be44e6f574cd066.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "TurboFuzzLLM: Turbocharging Mutation-based Fuzzing for Effectively Jailbreaking Large Language Models in Practice",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-ad782fa56b519142",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-9e09f03673c29277b956a89d5c48453786f63d514a2181020a678b069db8d76c",
+          "media_type": "application/json",
+          "sha256": "9e09f03673c29277b956a89d5c48453786f63d514a2181020a678b069db8d76c",
+          "uri": "literature/intake/9e09f03673c29277b956a89d5c48453786f63d514a2181020a678b069db8d76c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Qwen3Guard Technical Report",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-ae7f21e4f1aa5bad",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-d6553e5e13b2b1546eb9ba1acbac85aa1fd03b5d326c4df78462cab2e777258f",
+          "media_type": "application/json",
+          "sha256": "d6553e5e13b2b1546eb9ba1acbac85aa1fd03b5d326c4df78462cab2e777258f",
+          "uri": "literature/intake/d6553e5e13b2b1546eb9ba1acbac85aa1fd03b5d326c4df78462cab2e777258f.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-b418cf676053dbb4",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-2638633790a0e101a4581fdf0858c63b8498825eaa5f9166a10388ee6e470988",
+          "media_type": "application/json",
+          "sha256": "2638633790a0e101a4581fdf0858c63b8498825eaa5f9166a10388ee6e470988",
+          "uri": "literature/intake/2638633790a0e101a4581fdf0858c63b8498825eaa5f9166a10388ee6e470988.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Baseline Defenses for Adversarial Attacks Against Aligned Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-c8c688db850fa574",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-0f9751a483568fd7cce647d495b2fbbe78297a8578da1aad42fbed9b2561d4d8",
+          "media_type": "application/json",
+          "sha256": "0f9751a483568fd7cce647d495b2fbbe78297a8578da1aad42fbed9b2561d4d8",
+          "uri": "literature/intake/0f9751a483568fd7cce647d495b2fbbe78297a8578da1aad42fbed9b2561d4d8.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-ca624b20ff505d80",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-947948b7abadb13d09289f5f616c30d563b24881992714fb98ce40aa0df937b3",
+          "media_type": "application/json",
+          "sha256": "947948b7abadb13d09289f5f616c30d563b24881992714fb98ce40aa0df937b3",
+          "uri": "literature/intake/947948b7abadb13d09289f5f616c30d563b24881992714fb98ce40aa0df937b3.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "MazeBreaker: Multi-Agent Reinforcement Learning for Dynamic Jailbreaking of LLM Security Defenses",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-d35d98da6b16e4a0",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-88a5c0cd3a479ec360f5b19c87356d3d566ef1e5a97e6a021d70a511aa517dbc",
+          "media_type": "application/json",
+          "sha256": "88a5c0cd3a479ec360f5b19c87356d3d566ef1e5a97e6a021d70a511aa517dbc",
+          "uri": "literature/intake/88a5c0cd3a479ec360f5b19c87356d3d566ef1e5a97e6a021d70a511aa517dbc.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Aegis2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-dbf992754cc594c7",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-93f3da52cbf953b4a7122e7c16d1ef66b9177c2fb279ed62eeacdd18dd27f1a0",
+          "media_type": "application/json",
+          "sha256": "93f3da52cbf953b4a7122e7c16d1ef66b9177c2fb279ed62eeacdd18dd27f1a0",
+          "uri": "literature/intake/93f3da52cbf953b4a7122e7c16d1ef66b9177c2fb279ed62eeacdd18dd27f1a0.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Unraveling LLM Jailbreaks Through Safety Knowledge Neurons",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-dc8a3b09a1e8c2cd",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-e39597b9874f13614bae3afc529b35583d72218cbf7dc97b6707688f9601c901",
+          "media_type": "application/json",
+          "sha256": "e39597b9874f13614bae3afc529b35583d72218cbf7dc97b6707688f9601c901",
+          "uri": "literature/intake/e39597b9874f13614bae3afc529b35583d72218cbf7dc97b6707688f9601c901.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-e2ea6990bb7b2d6a",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-e7316043ead4e3d7c9887ffd948a428f950fc3cdcd1829bd455cfc7483d90e6a",
+          "media_type": "application/json",
+          "sha256": "e7316043ead4e3d7c9887ffd948a428f950fc3cdcd1829bd455cfc7483d90e6a",
+          "uri": "literature/intake/e7316043ead4e3d7c9887ffd948a428f950fc3cdcd1829bd455cfc7483d90e6a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "MOCHA: Are Code Language Models Robust Against Multi-Turn Malicious Coding Prompts?",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-ea8eaa27c3b76536",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-434a5e13078d4d545f136a80126002473cacb4bd9867ba4faf914a29d608667a",
+          "media_type": "application/json",
+          "sha256": "434a5e13078d4d545f136a80126002473cacb4bd9867ba4faf914a29d608667a",
+          "uri": "literature/intake/434a5e13078d4d545f136a80126002473cacb4bd9867ba4faf914a29d608667a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-f0015370d2dae01e",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-dc94a7713a74600c5eba208d26c55d112a1a45ed73cdca901d26222c920b1958",
+          "media_type": "application/json",
+          "sha256": "dc94a7713a74600c5eba208d26c55d112a1a45ed73cdca901d26222c920b1958",
+          "uri": "literature/intake/dc94a7713a74600c5eba208d26c55d112a1a45ed73cdca901d26222c920b1958.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:paper-f7b04e260d99c56a",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-6d067971f2227e6ea9de650ec0f683527abff99976973abbc888cb3ec2eda28a",
+          "media_type": "application/json",
+          "sha256": "6d067971f2227e6ea9de650ec0f683527abff99976973abbc888cb3ec2eda28a",
+          "uri": "literature/intake/6d067971f2227e6ea9de650ec0f683527abff99976973abbc888cb3ec2eda28a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [],
+      "our_interpretation": [],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-codejailbreaker",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-9f99438e725992155c5d6ddf4d83694eacac63f4edb450070543f4adbd544e6d",
+          "media_type": "application/json",
+          "sha256": "9f99438e725992155c5d6ddf4d83694eacac63f4edb450070543f4adbd544e6d",
+          "uri": "literature/intake/9f99438e725992155c5d6ddf4d83694eacac63f4edb450070543f4adbd544e6d.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-codejailbreaker-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-codejailbreaker-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-codejailbreaker-judge-1",
+          "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-codejailbreaker-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-codejailbreaker-judge",
+          "text": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Smoke and Mirrors / CodeJailbreaker",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-content-concretization",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-d618e904561b55d216089179b6649b347ed3e70021e32aa21280b058e556f2a4",
+          "media_type": "application/json",
+          "sha256": "d618e904561b55d216089179b6649b347ed3e70021e32aa21280b058e556f2a4",
+          "uri": "literature/intake/d618e904561b55d216089179b6649b347ed3e70021e32aa21280b058e556f2a4.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-content-concretization-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-content-concretization-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-content-concretization-effect-1",
+          "text": "Do prior effect-level evaluations already answer the proposed question?"
+        },
+        {
+          "id": "question:queue-content-concretization-effect-2",
+          "text": "What would the pilot falsify?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-content-concretization-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-content-concretization-effect",
+          "text": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "Content Concretization",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-guidedeval",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-c77077a98e65c43b73aa367787eefc7778a692ffb1167f14623cd7d2d7b46617",
+          "media_type": "application/json",
+          "sha256": "c77077a98e65c43b73aa367787eefc7778a692ffb1167f14623cd7d2d7b46617",
+          "uri": "literature/intake/c77077a98e65c43b73aa367787eefc7778a692ffb1167f14623cd7d2d7b46617.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The synthesis explicitly leaves the naming and protocol unresolved. Baseline selection depends on resolving this item.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-guidedeval-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-guidedeval-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-guidedeval-identity-1",
+          "text": "Are these names referring to the same intended source and evaluation procedure?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-guidedeval-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-guidedeval-identity",
+          "text": "The synthesis explicitly leaves the naming and protocol unresolved. Baseline selection depends on resolving this item."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "GUIDEDEVAL / GuidedBench — identity to resolve",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-harmbench",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-2cf62c459fbf58df060866eeb01b56c1e211ef4b24ec5d95b8a50d97a162815e",
+          "media_type": "application/json",
+          "sha256": "2cf62c459fbf58df060866eeb01b56c1e211ef4b24ec5d95b8a50d97a162815e",
+          "uri": "literature/intake/2cf62c459fbf58df060866eeb01b56c1e211ef4b24ec5d95b8a50d97a162815e.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": null,
+        "status": "unassessed"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-harmbench-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-harmbench-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-harmbench-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "HarmBench",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-infinite-mutation",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-611bdc9eb18cf692c9ecd21888f19ad8f8c31283321bf1089b32770596cfe01a",
+          "media_type": "application/json",
+          "sha256": "611bdc9eb18cf692c9ecd21888f19ad8f8c31283321bf1089b32770596cfe01a",
+          "uri": "literature/intake/611bdc9eb18cf692c9ecd21888f19ad8f8c31283321bf1089b32770596cfe01a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-infinite-mutation-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-infinite-mutation-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-infinite-mutation-effect-1",
+          "text": "Do prior effect-level evaluations already answer the proposed question?"
+        },
+        {
+          "id": "question:queue-infinite-mutation-effect-2",
+          "text": "What would the pilot falsify?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-infinite-mutation-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-infinite-mutation-effect",
+          "text": "A possible study is to compare judge decisions with a task-specific end-to-end effect oracle. This is a project question, not an established research gap."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "The Infinite Mutation Engine",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-jaws",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-0a22396cb538f24fc4bce720c67b33227fe87a12b659c527c8cecf358129d39e",
+          "media_type": "application/json",
+          "sha256": "0a22396cb538f24fc4bce720c67b33227fe87a12b659c527c8cecf358129d39e",
+          "uri": "literature/intake/0a22396cb538f24fc4bce720c67b33227fe87a12b659c527c8cecf358129d39e.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-jaws-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-jaws-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-jaws-staged-1",
+          "text": "What exact endpoint and unit of evaluation does each source establish?"
+        },
+        {
+          "id": "question:queue-jaws-staged-2",
+          "text": "Which parts of the proposed comparison are already covered?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-jaws-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-jaws-staged",
+          "text": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "JAWS-Bench",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-litmus",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-ade240bf5b7b72cf1484c91756a5aeaf7980793b7ba7277e0125993d7b9f5ccb",
+          "media_type": "application/json",
+          "sha256": "ade240bf5b7b72cf1484c91756a5aeaf7980793b7ba7277e0125993d7b9f5ccb",
+          "uri": "literature/intake/ade240bf5b7b72cf1484c91756a5aeaf7980793b7ba7277e0125993d7b9f5ccb.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-litmus-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-litmus-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-litmus-staged-1",
+          "text": "What exact endpoint and unit of evaluation does each source establish?"
+        },
+        {
+          "id": "question:queue-litmus-staged-2",
+          "text": "Which parts of the proposed comparison are already covered?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-litmus-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-litmus-staged",
+          "text": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "LITMUS",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-malwarebench",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-f7beb011693dfe1f69934fcb43733eb98505a3dfdcaf13a1ba4b7ce60090a37b",
+          "media_type": "application/json",
+          "sha256": "f7beb011693dfe1f69934fcb43733eb98505a3dfdcaf13a1ba4b7ce60090a37b",
+          "uri": "literature/intake/f7beb011693dfe1f69934fcb43733eb98505a3dfdcaf13a1ba4b7ce60090a37b.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-malwarebench-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-malwarebench-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-malwarebench-judge-1",
+          "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-malwarebench-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-malwarebench-judge",
+          "text": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "MalwareBench",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-redcode",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-70a57cedc7e1d95e95bb3319275ac728a1ee00a382aac3190204a031bc83ad6a",
+          "media_type": "application/json",
+          "sha256": "70a57cedc7e1d95e95bb3319275ac728a1ee00a382aac3190204a031bc83ad6a",
+          "uri": "literature/intake/70a57cedc7e1d95e95bb3319275ac728a1ee00a382aac3190204a031bc83ad6a.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-redcode-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-redcode-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-redcode-staged-1",
+          "text": "What exact endpoint and unit of evaluation does each source establish?"
+        },
+        {
+          "id": "question:queue-redcode-staged-2",
+          "text": "Which parts of the proposed comparison are already covered?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-redcode-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-redcode-staged",
+          "text": "The synthesis flags these reading candidates as threats to broad claims about functional or staged validation. Primary-source extraction is still required."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "RedCode",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    },
+    {
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "evidence_status": "listed",
+      "id": "paper:queue-rmcbench",
+      "identifiers": {
+        "arxiv_id": null,
+        "doi": null
+      },
+      "intake_artifacts": [
+        {
+          "description": "Original intake cells and source-file provenance; not verified evidence.",
+          "id": "artifact:intake-609edbe776f4fe7938a0f940cf5fa3bf6ea73019df5193613f6de8811f55cf1c",
+          "media_type": "application/json",
+          "sha256": "609edbe776f4fe7938a0f940cf5fa3bf6ea73019df5193613f6de8811f55cf1c",
+          "uri": "literature/intake/609edbe776f4fe7938a0f940cf5fa3bf6ea73019df5193613f6de8811f55cf1c.json"
+        }
+      ],
+      "notes": "Imported reading queue. Intake metadata has not been independently checked.",
+      "novelty": {
+        "basis": "manual_evidence_review",
+        "evidence_ids": [],
+        "rationale": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution.",
+        "status": "under_review"
+      },
+      "open_questions": [
+        {
+          "id": "question:queue-rmcbench-1",
+          "text": "Confirm the paper identity and direct source link."
+        },
+        {
+          "id": "question:queue-rmcbench-2",
+          "text": "Extract the success definition, evaluation protocol and limitations from primary sources."
+        },
+        {
+          "id": "question:queue-rmcbench-judge-1",
+          "text": "Which comparison would add evidence beyond existing judge-reliability work?"
+        }
+      ],
+      "our_interpretation": [
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-rmcbench-1",
+          "text": "Listed for primary-source verification in the provisional control-room synthesis."
+        },
+        {
+          "evidence_ids": [],
+          "id": "interpretation:queue-rmcbench-judge",
+          "text": "The control room advises against framing evaluator error or ASR changes alone as new. Verify the closest protocols before defining the contribution."
+        }
+      ],
+      "paper_demonstrates": [],
+      "record_kind": "research",
+      "review": null,
+      "sources": [
+        {
+          "id": "source:control-room-2026-09-08",
+          "kind": "project",
+          "locator": "Provisional project synthesis, not a primary paper source.",
+          "url": "https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md"
+        }
+      ],
+      "timestamp": "2026-09-08T14:00:00Z",
+      "title": "RMCBench",
+      "validator_ids": [],
+      "venue_or_identifier": null,
+      "version": "1",
+      "year": null
+    }
+  ],
+  "readiness": {
+    "benchmarks": 3,
+    "datasets": 0,
+    "domains": 3,
+    "experiments": 0,
+    "experiments_completed": 0,
+    "human_labels": 0,
+    "measured_results": 0,
+    "papers": 47,
+    "papers_by_status": {
+      "deep-reviewed": 0,
+      "listed": 47,
+      "screened": 0,
+      "verified": 0
+    },
+    "results": 0,
+    "runs": 0,
+    "validators": 7,
+    "validators_implemented": 0
+  },
+  "registry_sha256": "caca5818c046a77c90bd4831543c38b999aa7e94cd2b6986002b0b94c0af6f42",
+  "results": [],
+  "runs": [],
+  "schema_version": "1.0.0",
+  "validators": [
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:case-specific",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "GUIDEDEVAL / GuidedBench-style judge",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:case-specific",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "behavioural"
+      ],
+      "executes_code": null,
+      "id": "validator:effect",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Task-specific behavioural oracle",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:effect",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:function-aware",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "CodeJailbreaker / MR-style evaluator",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:function-aware",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "semantic"
+      ],
+      "executes_code": null,
+      "id": "validator:generic-judge",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Generic LLM judge",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:generic-judge",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [
+        "semantic"
+      ],
+      "executes_code": null,
+      "id": "validator:harmfulness",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "HarmBench-style harmfulness classifier",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:harmfulness",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:malicious-code",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "RMCBench-style evaluator",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:malicious-code",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    },
+    {
+      "code_commit": null,
+      "domain_ids": [],
+      "evaluation_types": [],
+      "executes_code": null,
+      "id": "validator:runtime",
+      "implementation": null,
+      "judge_model": null,
+      "judge_prompt": null,
+      "name": "Compilation / runtime baseline",
+      "notes": "A planning candidate from the synthesis. The protocol and implementation have not been registered. Source: https://github.com/RifatBinSaroar/jailbreak-eval-lab/blob/108e3cb9d74d844c909f74f227a7d1ba40a7c3a9/research/CONTROL_ROOM_SYNTHESIS_2026-09-08.md",
+      "output_definition": null,
+      "paper_ids": [],
+      "record_kind": "research",
+      "rubric": {
+        "artifact": null,
+        "id": "rubric:runtime",
+        "version": "1"
+      },
+      "status": "planned",
+      "success_definition": null,
+      "timestamp": "2026-09-08T14:00:00Z",
+      "version": "1"
+    }
+  ],
+  "verified_paper_evidence": []
+}
