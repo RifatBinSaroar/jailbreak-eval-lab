@@ -2,31 +2,500 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "PaperRecord",
   "type": "object",
-  "required": ["paper_id", "title", "year", "url", "success_definition", "validator", "evidence_status"],
+  "required": [
+    "paper_id",
+    "title",
+    "year",
+    "venue_or_arxiv",
+    "url",
+    "research_problem",
+    "benchmark",
+    "domain",
+    "subdomains",
+    "success_definition",
+    "validator",
+    "labels_or_score",
+    "evaluation_type",
+    "executes_code",
+    "human_ground_truth",
+    "metrics",
+    "false_positive_evidence",
+    "false_negative_evidence",
+    "authors_limitations",
+    "paper_demonstrates",
+    "our_interpretation",
+    "open_questions",
+    "novelty_threat",
+    "evidence_status",
+    "doi",
+    "arxiv_id",
+    "source_links",
+    "missing_fields",
+    "warnings",
+    "review",
+    "sources"
+  ],
   "properties": {
-    "paper_id": {"type": "string"},
-    "title": {"type": "string"},
-    "year": {"type": "integer"},
-    "venue_or_arxiv": {"type": "string"},
-    "url": {"type": "string"},
-    "research_problem": {"type": "string"},
-    "benchmark": {"type": "string"},
-    "domain": {"type": "string"},
-    "subdomains": {"type": "array", "items": {"type": "string"}},
-    "success_definition": {"type": "string"},
-    "validator": {"type": "string"},
-    "labels_or_score": {"type": "string"},
-    "evaluation_type": {"type": "array", "items": {"enum": ["semantic", "static", "functional", "behavioural", "hybrid", "other"]}},
-    "executes_code": {"type": ["boolean", "null"]},
-    "human_ground_truth": {"type": "string"},
-    "metrics": {"type": "array", "items": {"type": "string"}},
-    "false_positive_evidence": {"type": "string"},
-    "false_negative_evidence": {"type": "string"},
-    "authors_limitations": {"type": "array", "items": {"type": "string"}},
-    "paper_demonstrates": {"type": "array", "items": {"type": "string"}},
-    "our_interpretation": {"type": "array", "items": {"type": "string"}},
-    "open_questions": {"type": "array", "items": {"type": "string"}},
-    "novelty_threat": {"enum": ["LOW", "MEDIUM", "HIGH", "FATAL", "UNKNOWN"]},
-    "evidence_status": {"enum": ["screened", "deep-reviewed", "verified"]}
-  }
+    "paper_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1000,
+      "maximum": 9999
+    },
+    "venue_or_arxiv": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "research_problem": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "benchmark": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "domain": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "subdomains": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_definition": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "validator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "labels_or_score": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "evaluation_type": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "enum": [
+          "semantic",
+          "static",
+          "functional",
+          "behavioural",
+          "hybrid",
+          "other"
+        ]
+      }
+    },
+    "executes_code": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "human_ground_truth": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "metrics": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "false_positive_evidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "false_negative_evidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "authors_limitations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "paper_demonstrates": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "our_interpretation": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "novelty_threat": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "FATAL",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "unreviewed",
+        "screened",
+        "deep-reviewed",
+        "verified"
+      ],
+      "description": "User-declared review stage. Import defaults to unreviewed; review metadata is validated, not independently verified."
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "arxiv_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "source_links": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "missing_fields": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "title",
+          "year",
+          "venue_or_arxiv",
+          "url",
+          "research_problem",
+          "benchmark",
+          "domain",
+          "subdomains",
+          "success_definition",
+          "validator",
+          "labels_or_score",
+          "evaluation_type",
+          "executes_code",
+          "human_ground_truth",
+          "metrics",
+          "false_positive_evidence",
+          "false_negative_evidence",
+          "authors_limitations",
+          "paper_demonstrates",
+          "our_interpretation",
+          "open_questions",
+          "novelty_threat",
+          "doi",
+          "arxiv_id"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "review": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "reviewed_by",
+        "reviewed_at",
+        "notes"
+      ],
+      "properties": {
+        "reviewed_by": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "field",
+              "value",
+              "source_url",
+              "locator",
+              "checked_by",
+              "checked_at"
+            ],
+            "properties": {
+              "field": {
+                "enum": [
+                  "title",
+                  "year",
+                  "venue_or_arxiv",
+                  "url",
+                  "research_problem",
+                  "benchmark",
+                  "domain",
+                  "subdomains",
+                  "success_definition",
+                  "validator",
+                  "labels_or_score",
+                  "evaluation_type",
+                  "executes_code",
+                  "human_ground_truth",
+                  "metrics",
+                  "false_positive_evidence",
+                  "false_negative_evidence",
+                  "authors_limitations",
+                  "paper_demonstrates",
+                  "our_interpretation",
+                  "open_questions",
+                  "novelty_threat",
+                  "doi",
+                  "arxiv_id"
+                ]
+              },
+              "value": {},
+              "source_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "checked_by": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "checked_at": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "sha256",
+          "sheet",
+          "row",
+          "columns"
+        ],
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "sheet": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "row": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "columns": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "header",
+                "value",
+                "cell",
+                "hyperlink",
+                "is_formula"
+              ],
+              "properties": {
+                "header": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "value": {},
+                "cell": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "hyperlink": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "is_formula": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "description": "Canonical literature record. Null means unknown, never false. Importing does not establish evidence.",
+  "additionalProperties": false,
+  "x-research-fields": [
+    "title",
+    "year",
+    "venue_or_arxiv",
+    "url",
+    "research_problem",
+    "benchmark",
+    "domain",
+    "subdomains",
+    "success_definition",
+    "validator",
+    "labels_or_score",
+    "evaluation_type",
+    "executes_code",
+    "human_ground_truth",
+    "metrics",
+    "false_positive_evidence",
+    "false_negative_evidence",
+    "authors_limitations",
+    "paper_demonstrates",
+    "our_interpretation",
+    "open_questions",
+    "novelty_threat",
+    "doi",
+    "arxiv_id"
+  ]
 }

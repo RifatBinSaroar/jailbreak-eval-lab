@@ -1,0 +1,26 @@
+name: Literature pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  literature:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r requirements-literature.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/literature.py validate
+      - run: python scripts/literature.py export --replace
+      - run: git diff --exit-code -- apps/web/public/data/literature.json

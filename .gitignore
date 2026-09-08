@@ -17,3 +17,8 @@ results/generated/*
 apps/web/node_modules/
 apps/web/dist/
 apps/web/.next/
+
+# Local literature inputs and disposable example outputs
+literature/input/
+literature/example-output/
+*.egg-info/
