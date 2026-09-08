@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "runs",
+  "records": [
+    {
+      "id": "run:template-planned",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "experiment_id": "experiment:template-protocol",
+      "experiment_sha256": "a2c1252efca360cf7a21199d374debb9a708b5bcdb6cbc7037072d448d0f325e",
+      "inputs_sha256": "75663dede0b1852169559f3fc1502dd9ca55da2e4dd5492dc046fa337c5428a2",
+      "status": "planned",
+      "started_at": null,
+      "finished_at": null,
+      "environment": null,
+      "artifacts": [],
+      "exclusions": []
+    }
+  ]
+}

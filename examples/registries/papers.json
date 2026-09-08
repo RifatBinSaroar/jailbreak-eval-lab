@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "registry": "papers",
+  "records": [
+    {
+      "id": "paper:template-extraction",
+      "record_kind": "template",
+      "version": "template-v1",
+      "timestamp": "2026-09-08T00:00:00Z",
+      "notes": "TEMPLATE ONLY. Not an observation or approved research protocol.",
+      "title": "TEMPLATE \u2014 replace with a supplied or retrieved paper",
+      "year": null,
+      "venue_or_identifier": null,
+      "sources": [],
+      "evidence_status": "listed",
+      "benchmark_ids": [],
+      "domain_ids": [],
+      "validator_ids": [],
+      "paper_demonstrates": [],
+      "our_interpretation": [],
+      "open_questions": [
+        {
+          "id": "question:template-extraction",
+          "text": "Which source evidence supports the exact success definition?"
+        }
+      ],
+      "novelty": {
+        "status": "unassessed",
+        "basis": "manual_evidence_review",
+        "rationale": null,
+        "evidence_ids": []
+      }
+    }
+  ]
+}

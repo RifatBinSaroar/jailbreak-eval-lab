@@ -1,0 +1,33 @@
+name: Research registry contracts
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m jailbreak_eval.registry validate
+      - run: python -m jailbreak_eval.registry validate --directory examples/registries --allow-templates
+      - name: Preserve published registry history
+        if: github.event_name == 'pull_request'
+        env:
+          REGISTRY_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python scripts/check_registry_history.py --base "$REGISTRY_BASE_SHA"
+      - run: python -m pytest
+      - run: python -m jailbreak_eval.registry export-web --output apps/web/dist/research-data.json

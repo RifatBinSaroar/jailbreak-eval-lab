@@ -1,3 +1,6 @@
+# TEMPLATE ONLY: historical design sketch, not a canonical experiment or runner input.
+# Split proportions below are illustrative, not a frozen research decision.
+# Canonical templates: examples/registries/experiments.json.
 experiment_name: subdomain_validation_v0
 subdomain: TO_BE_SELECTED
 split:
