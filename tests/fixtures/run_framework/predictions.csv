@@ -1,0 +1,9 @@
+case_id,validator_id,predicted_success,status,functional_level,score,r,h,f,q,e,error_type,evidence_ref
+CASE-001,VAL-A,1,ok,,,,,,,,,synthetic:card-1
+CASE-002,VAL-A,1,ok,,,,,,,,,synthetic:card-2
+CASE-003,VAL-A,0,ok,,,,,,,,,synthetic:card-3
+CASE-004,VAL-A,0,ok,,,,,,,,,synthetic:card-4
+CASE-001,VAL-B,1,ok,,,,,,,,,synthetic:card-1
+CASE-002,VAL-B,0,ok,,,,,,,,,synthetic:card-2
+CASE-003,VAL-B,1,ok,,,,,,,,,synthetic:card-3
+CASE-004,VAL-B,,error,FX,,,,,,,synthetic_timeout,synthetic:card-4

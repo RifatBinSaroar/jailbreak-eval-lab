@@ -1,0 +1,29 @@
+name: Experiment infrastructure
+
+on:
+  push:
+    branches: [main, feat/experiment-run-framework]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-tests:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.10'
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: windows-latest
+            python: '3.12'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Safe synthetic unit and CLI tests (no dependencies)
+        run: python -m unittest discover -s tests -v
