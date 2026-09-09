@@ -1,0 +1,1 @@
+Temporary packaging branch for a Netlify-ready preview ZIP. Source snapshot: feat/research-platform-v0.1-integration at c40f6850c70f43c482f73a6de8620061a59705c0. This branch is not the research integration branch and should not be merged into main.
