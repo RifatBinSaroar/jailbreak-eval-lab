@@ -1,0 +1,51 @@
+name: Netlify preview package
+
+on:
+  push:
+    branches:
+      - deploy/netlify-preview-v0.1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build Netlify-ready static ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf netlify-site
+          mkdir -p netlify-site
+          cp apps/web/index.html netlify-site/
+          cp apps/web/styles.css netlify-site/
+          cp apps/web/app.js netlify-site/
+          cp apps/web/data.js netlify-site/
+          cp apps/web/views.js netlify-site/
+          cp -R apps/web/data netlify-site/data
+          cat > netlify-site/DEPLOY_README.txt <<'EOF'
+          Jailbreak Evaluation Lab — Netlify static preview
+
+          This package contains the Research Platform v0.1 web interface from
+          feat/research-platform-v0.1-integration.
+
+          Deploy by dragging this ZIP into Netlify Drop / manual deploy.
+          index.html is at the ZIP root. No npm or build command is required.
+
+          The dashboard is a static research interface. Current production data
+          truthfully reports zero experiments and zero measured experimental results.
+          EOF
+          (cd netlify-site && zip -r ../JailbreakEval-Netlify-v0.1.zip .)
+
+      - name: Upload Netlify ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: JailbreakEval-Netlify-v0.1
+          path: JailbreakEval-Netlify-v0.1.zip
+          if-no-files-found: error
+          retention-days: 14
